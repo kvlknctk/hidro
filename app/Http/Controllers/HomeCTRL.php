@@ -11,18 +11,48 @@
         public function index()
         {
             SEO::setTitle('Home');
-            SEO::setDescription('This is my page description');
+            SEO::setDescription('Hidropar Eskişehir firmasının çalışmaları ve ürünlerinin yer aldığı resmi web sitesi.');
 
             $sliders = Slider::all();
 
             return view('index', compact('sliders'));
         }
 
+        public function works()
+        {
+
+        }
+
+        public function work_detail($slug)
+        {
+
+        }
+
+        public function products($slug = null)
+        {
+
+        }
+
+        public function services()
+        {
+
+        }
+
+        public function service_detail($slug)
+        {
+
+        }
+
+        public function human_resources()
+        {
+
+        }
+
 
         public function contact()
         {
             SEO::setTitle('İletişim');
-            SEO::setDescription('This is my page description');
+            SEO::setDescription('İletişim bölümünden firmamızla iletişime geçebilir, teknik destek talebi oluşturabilir ve diğer konular hakkında bilgi alabilirsiniz. ');
 
             return view('contact');
         }
