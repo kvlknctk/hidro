@@ -33,9 +33,10 @@
                 <div class="inner-container clearfix">
                     <div class="top-left">
                         <ul class="clearfix top-menu">
-                            <li><a href="#">Haberler</a></li>
-                            <li><a href="#">İnsan </a></li>
-                            <li><a href="#">ol</a></li>
+                            <li><a href="#">İnsan Kaynakları </a></li>
+                            <li><a href="#">Destek Talebi</a></li>
+                            <li><a href="#">İletişim</a></li>
+
                         </ul>
                     </div>
                     <div class="top-right clearfix">
