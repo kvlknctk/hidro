@@ -11,7 +11,7 @@
         public function index()
         {
             SEO::setTitle('Home');
-            SEO::setDescription('Hidropar Eskişehir firmasının çalışmaları ve ürünlerinin yer aldığı resmi web sitesi.');
+            SEO::setDescription('This is my page description');
 
             $sliders = Slider::all();
 

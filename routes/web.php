@@ -12,7 +12,7 @@
 */
 
 Route::get('/', ['as' => 'index', 'uses' => 'HomeCTRL@index']);
-Route::get('/contact', ['as' => 'contact', 'uses' => 'HomeCTRL@contact']);
+Route::get('/iletisim', ['as' => 'contact', 'uses' => 'HomeCTRL@contact']);
 
 
 
