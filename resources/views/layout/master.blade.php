@@ -124,12 +124,9 @@
                                     </ul>
                                 </li>--}}
 
-                                <li>
-                                    <a href="{{route('index')}}">Anasayfa</a>
-                                </li>
-                                <li>
-                                    <a href="{{route('contact')}}">İletişim</a>
-                                </li>
+                                <li><a href="{{route('index')}}">Anasayfa</a></li>
+                                <li><a href="{{route('services')}}">Hizmetler</a></li>
+                                <li><a href="{{route('contact')}}">İletişim</a></li>
                             </ul>
                         </div>
                     </nav>
