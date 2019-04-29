@@ -2,6 +2,7 @@
 
     namespace App\Http\Controllers;
 
+    use App\Service;
     use App\Slider;
     use Illuminate\Http\Request;
     use SEO;
