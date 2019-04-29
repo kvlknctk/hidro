@@ -71,8 +71,8 @@
                         <div class="upper-column info-box">
                             <div class="icon-box"><span class="machinery-icon-map"></span></div>
                             <ul>
-                                <li>13, Big Smart Str, 2nd Cross</li>
-                                <li><strong>Newyork, USA 1002.</strong></li>
+                                <li>{{setting('iletisim.adres')}}</li>
+                                <li><strong>{{setting('iletisim.sehir')}}</strong></li>
                             </ul>
                         </div>
 
@@ -80,17 +80,17 @@
                         <div class="upper-column info-box">
                             <div class="icon-box"><span class="machinery-icon-contact"></span></div>
                             <ul>
-                                <li>1-800-784-533 & 544</li>
-                                <li><strong>Machinery@Support.com</strong></li>
+                                <li>{{setting('iletisim.tel1')}}</li>
+                                <li><strong>{{setting('iletisim.mail')}}</strong></li>
                             </ul>
                         </div>
 
                         <!--social Box-->
                         <div class="upper-column info-box">
                             <div class="social-icons">
-                                <a href="#"><i class="fa fa-facebook-f"></i></a><!--
-                                --><a href="#"><i class="fa fa-twitter"></i></a><!--
-                                --><a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
                             </div><!-- /.social-icons -->
                         </div>
                     </div>
