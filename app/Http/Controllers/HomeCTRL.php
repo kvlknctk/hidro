@@ -36,6 +36,8 @@
         public function services()
         {
 
+            $services = Service::get();
+            return view('services', compact('services'));
         }
 
         public function service_detail($slug)
