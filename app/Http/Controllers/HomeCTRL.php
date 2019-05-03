@@ -20,6 +20,8 @@
 
         public function works()
         {
+            SEO::setTitle('Çalışmalar');
+            SEO::setDescription('Hidropar Eskişehir firmasının daha önceden yapmış olduğu çalışmalar bu sayfada yer alacak. ');
 
         }
 
