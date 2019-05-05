@@ -89,9 +89,19 @@
                         <!--social Box-->
                         <div class="upper-column info-box">
                             <div class="social-icons">
-                                <a href="#"><i class="fa fa-facebook-f"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
+
+                                @if(setting('sosyal-medya.instagram'))
+                                    <a href="{{setting('sosyal-medya.instagram')}}"><i class="fa fa-instagram"></i></a>
+                                @endif
+
+                                @if(setting('sosyal-medya.youtube'))
+                                    <a href="{{setting('sosyal-medya.youtube')}}"><i class="fa fa-youtube"></i></a>
+                                @endif
+
+                                @if(setting('sosyal-medya.facebook'))
+                                    <a href="{{setting('sosyal-medya.facebook')}}"><i class="fa fa-facebook-f"></i></a>
+                                @endif
+
                             </div><!-- /.social-icons -->
                         </div>
                     </div>
