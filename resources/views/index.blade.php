@@ -395,9 +395,6 @@
     <!--End Project Section -->
 
 
-
-
-
     <!-- News Section -->
     <section class="news-section">
         <div class="auto-container">
