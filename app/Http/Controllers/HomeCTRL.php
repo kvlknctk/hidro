@@ -20,6 +20,8 @@
 
         public function works()
         {
+            SEO::setTitle(trans('seo.titles.works'));
+            SEO::setDescription(trans('seo.descriptions.works'));
 
 
         }
