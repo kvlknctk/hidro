@@ -8,6 +8,7 @@
             'services' => 'Firmamızın sunmuş olduğu hizmetler hakkında detaylı bilgi alabilirsiniz. ',
             'contact'  => 'İletişim bölümünden firmamızla iletişime geçebilir, teknik destek talebi oluşturabilir ve diğer konular hakkında bilgi alabilirsiniz.',
             'works'    => 'Hidropar Eskişehir Firmasının daha önceden yapmış olduğu çalışmalara sayfamızdan ulaşabilirsiniz.',
+            'products' => 'Firmamız tarafından satışa sürülen ürünlerin tamamına ulaşabilir, fiyat bilgisi ve teklif alabilirsiniz.'
 
         ],
 
@@ -17,6 +18,7 @@
             'services' => 'Hizmetler',
             'contact'  => 'İletişim',
             'works'    => 'Çalışmalar',
+            'products' => 'Ürünler'
         ]
 
     ];
