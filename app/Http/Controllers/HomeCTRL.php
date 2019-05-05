@@ -2,6 +2,7 @@
 
     namespace App\Http\Controllers;
 
+    use App\Service;
     use App\Slider;
     use Illuminate\Http\Request;
     use SEO;
@@ -10,9 +11,8 @@
     {
         public function index()
         {
-            SEO::setTitle('Home');
-            SEO::setDescription('Hidropar Eskişehir firmasının çalışmaları ve ürünlerinin yer aldığı resmi web sitesi.');
-
+            SEO::setTitle(trans('seo.titles.home'));
+            SEO::setDescription(trans('seo.descriptions.home'));
             $sliders = Slider::all();
 
             return view('index', compact('sliders'));
@@ -37,7 +37,11 @@
 
         public function services()
         {
+            SEO::setTitle(trans('seo.titles.services'));
+            SEO::setDescription(trans('seo.descriptions.services'));
 
+            $services = Service::get();
+            return view('services', compact('services'));
         }
 
         public function service_detail($slug)
@@ -53,8 +57,8 @@
 
         public function contact()
         {
-            SEO::setTitle('İletişim');
-            SEO::setDescription('İletişim bölümünden firmamızla iletişime geçebilir, teknik destek talebi oluşturabilir ve diğer konular hakkında bilgi alabilirsiniz. ');
+            SEO::setTitle(trans('seo.titles.contact'));
+            SEO::setDescription(trans('seo.descriptions.contact'));
 
             return view('contact');
         }

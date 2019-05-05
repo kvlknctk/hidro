@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
     <meta charset="utf-8">
     {!! SEO::generate() !!}
@@ -33,16 +33,17 @@
                 <div class="inner-container clearfix">
                     <div class="top-left">
                         <ul class="clearfix top-menu">
-                            <li><a href="#">Haberler</a></li>
-                            <li><a href="#">İnsan </a></li>
-                            <li><a href="#">ol</a></li>
+                            <li><a href="#">İnsan Kaynakları </a></li>
+                            <li><a href="#">Destek Talebi</a></li>
+                            <li><a href="#">İletişim</a></li>
+
                         </ul>
                     </div>
                     <div class="top-right clearfix">
                         <ul class="clearfix right-info">
                             <li><i class="icon flaticon-clock-circular-outline"></i> Mon - Fri: 09:00 - 18:00 </li>
                         </ul>
-                        <div class="language dropdownn">
+                        {{--<div class="language dropdownn">
                             <a class="btn btn-default dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#"><span class="icon flaticon-globe"></span> California <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu style-one" aria-labelledby="dropdownMenu1">
                                 <li><a href="#">California</a></li>
@@ -50,7 +51,7 @@
                                 <li><a href="#">Bristol</a></li>
                                 <li><a href="#">Georgetown</a></li>
                             </ul>
-                        </div>
+                        </div>--}}
                     </div>
                 </div>
             </div>
@@ -71,8 +72,8 @@
                         <div class="upper-column info-box">
                             <div class="icon-box"><span class="machinery-icon-map"></span></div>
                             <ul>
-                                <li>13, Big Smart Str, 2nd Cross</li>
-                                <li><strong>Newyork, USA 1002.</strong></li>
+                                <li>{{setting('iletisim.adres')}}</li>
+                                <li><strong>{{setting('iletisim.sehir')}}</strong></li>
                             </ul>
                         </div>
 
@@ -80,17 +81,27 @@
                         <div class="upper-column info-box">
                             <div class="icon-box"><span class="machinery-icon-contact"></span></div>
                             <ul>
-                                <li>1-800-784-533 & 544</li>
-                                <li><strong>Machinery@Support.com</strong></li>
+                                <li>{{setting('iletisim.tel1')}}</li>
+                                <li><strong>{{setting('iletisim.mail')}}</strong></li>
                             </ul>
                         </div>
 
                         <!--social Box-->
                         <div class="upper-column info-box">
                             <div class="social-icons">
-                                <a href="#"><i class="fa fa-facebook-f"></i></a><!--
-                                --><a href="#"><i class="fa fa-twitter"></i></a><!--
-                                --><a href="#"><i class="fa fa-linkedin"></i></a>
+
+                                @if(setting('sosyal-medya.instagram'))
+                                    <a href="{{setting('sosyal-medya.instagram')}}"><i class="fa fa-instagram"></i></a>
+                                @endif
+
+                                @if(setting('sosyal-medya.youtube'))
+                                    <a href="{{setting('sosyal-medya.youtube')}}"><i class="fa fa-youtube"></i></a>
+                                @endif
+
+                                @if(setting('sosyal-medya.facebook'))
+                                    <a href="{{setting('sosyal-medya.facebook')}}"><i class="fa fa-facebook-f"></i></a>
+                                @endif
+
                             </div><!-- /.social-icons -->
                         </div>
                     </div>
@@ -124,12 +135,9 @@
                                     </ul>
                                 </li>--}}
 
-                                <li>
-                                    <a href="{{route('index')}}">Anasayfa</a>
-                                </li>
-                                <li>
-                                    <a href="{{route('contact')}}">İletişim</a>
-                                </li>
+                                <li><a href="{{route('index')}}">Anasayfa</a></li>
+                                <li><a href="{{route('services')}}">Hizmetler</a></li>
+                                <li><a href="{{route('contact')}}">İletişim</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -137,8 +145,8 @@
                     <!--Search Box-->
                     <div class="search-box">
                         <div class="dropdown dropdown-outer">
-                            <a href="shoping-cart.html" class="cart-btn"><i class="machinery-icon-null"></i><span class="count">0</span></a><!--
-                            --><button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></button>
+
+                            <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></button>
                             <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
                                 <li class="panel-outer">
                                     <div class="form-container">
@@ -168,7 +176,7 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo pull-left">
-                    <a href="index.html" class="img-responsive"><img src="{{asset('images/logo-small.png')}}" alt="" title=""></a>
+                    <a href="{{route('index')}}" class="img-responsive"><img src="{{asset('images/logo-small.png')}}" alt="" title=""></a>
                 </div>
                 <!--Right Col-->
                 <div class="right-col pull-right">
