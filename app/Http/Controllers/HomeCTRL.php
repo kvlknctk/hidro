@@ -52,6 +52,8 @@
 
         public function human_resources()
         {
+            SEO::setTitle(trans('seo.titles.human_resources'));
+            SEO::setDescription(trans('seo.descriptions.human_resources'));
 
         }
 
