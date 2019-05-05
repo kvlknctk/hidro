@@ -43,7 +43,7 @@
                         <ul class="clearfix right-info">
                             <li><i class="icon flaticon-clock-circular-outline"></i> Mon - Fri: 09:00 - 18:00 </li>
                         </ul>
-                        <div class="language dropdownn">
+                        {{--<div class="language dropdownn">
                             <a class="btn btn-default dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#"><span class="icon flaticon-globe"></span> California <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu style-one" aria-labelledby="dropdownMenu1">
                                 <li><a href="#">California</a></li>
@@ -51,7 +51,7 @@
                                 <li><a href="#">Bristol</a></li>
                                 <li><a href="#">Georgetown</a></li>
                             </ul>
-                        </div>
+                        </div>--}}
                     </div>
                 </div>
             </div>
