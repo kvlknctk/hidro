@@ -12,10 +12,11 @@
         ],
 
 
-        'titles'       => [
+        'titles' => [
             'home'     => 'Anasayfa',
             'services' => 'Hizmetler',
-            'contact'  => 'İletişim'
+            'contact'  => 'İletişim',
+            'works'    => 'Çalışmalar',
         ]
 
     ];
