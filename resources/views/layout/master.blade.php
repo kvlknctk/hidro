@@ -145,8 +145,8 @@
                     <!--Search Box-->
                     <div class="search-box">
                         <div class="dropdown dropdown-outer">
-                            <a href="shoping-cart.html" class="cart-btn"><i class="machinery-icon-null"></i><span class="count">0</span></a><!--
-                            --><button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></button>
+
+                            <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></button>
                             <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
                                 <li class="panel-outer">
                                     <div class="form-container">
