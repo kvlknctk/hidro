@@ -28,6 +28,8 @@
 
         public function work_detail($slug)
         {
+            SEO::setTitle('Çalışma detayları burada yer alacak. ');
+            SEO::setDescription('Çalışma burada yer alacak. ');
 
         }
 
@@ -49,7 +51,8 @@
 
         public function service_detail($slug)
         {
-
+            SEO::setTitle('Servis detayı başlığı burada yer alacak. ');
+            SEO::setDescription('Servis detayları hakkında açıklama burada yer alacak. ');
         }
 
         public function human_resources()
