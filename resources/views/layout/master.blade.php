@@ -176,7 +176,7 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo pull-left">
-                    <a href="index.html" class="img-responsive"><img src="{{asset('images/logo-small.png')}}" alt="" title=""></a>
+                    <a href="{{route('index')}}" class="img-responsive"><img src="{{asset('images/logo-small.png')}}" alt="" title=""></a>
                 </div>
                 <!--Right Col-->
                 <div class="right-col pull-right">
