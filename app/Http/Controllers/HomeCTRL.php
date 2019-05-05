@@ -33,6 +33,8 @@
 
         public function products($slug = null)
         {
+            SEO::setTitle(trans('seo.titles.products'));
+            SEO::setDescription(trans('seo.descriptions.products'));
 
         }
 
