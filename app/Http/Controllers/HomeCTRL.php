@@ -2,6 +2,7 @@
 
     namespace App\Http\Controllers;
 
+    use App\Announcement;
     use App\Service;
     use App\Slider;
     use Illuminate\Http\Request;
@@ -13,9 +14,14 @@
         {
             SEO::setTitle(trans('seo.titles.home'));
             SEO::setDescription(trans('seo.descriptions.home'));
-            $sliders = Slider::all();
 
-            return view('index', compact('sliders'));
+            $sliders       = Slider::all();
+            $announcements = Announcement::limit(4)->get();
+            $services      = Service::limit(10)->get();
+
+            return view('index', compact(
+                'sliders', 'announcements', 'services'
+            ));
         }
 
         public function works()
@@ -46,6 +52,7 @@
             SEO::setDescription(trans('seo.descriptions.services'));
 
             $services = Service::get();
+
             return view('services', compact('services'));
         }
 
