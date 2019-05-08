@@ -21,8 +21,8 @@
                                         <h3 class="title">Hidropar Eskişehir</h3>
                                         <h1>{{$slider->title}}</h1>
                                         <p class="text">{!! $slider->description !!}</p>
-                                        <a href="#" class="theme-btn btn-style-one">Read More</a>
-                                        <a href="#" class="theme-btn btn-style-two">Market Sectors</a>
+                                        <a href="#" class="theme-btn btn-style-one">asd</a>
+                                        {{--<a href="#" class="theme-btn btn-style-two">Market Sectors</a>--}}
                                     </div><!-- /.main-banner-content -->
                                 </div>
                             </div>
@@ -38,17 +38,17 @@
         <!-- Controls -->
         <a class="left carousel-control" href="#minimal-bootstrap-carousel" role="button" data-slide="prev">
             <i class="fa fa-angle-left"></i>
-            <span class="sr-only">Previous</span>
+            <span class="sr-only">Önceki</span>
         </a>
         <a class="right carousel-control" href="#minimal-bootstrap-carousel" role="button" data-slide="next">
             <i class="fa fa-angle-right"></i>
-            <span class="sr-only">Next</span>
+            <span class="sr-only">Sonraki</span>
         </a>
 
         <ul class="carousel-indicators list-inline custom-navigation">
-            <li data-target="#minimal-bootstrap-carousel" data-slide-to="0" class="active"></li><!--
-            --><li data-target="#minimal-bootstrap-carousel" data-slide-to="1"></li><!--
-            --><li data-target="#minimal-bootstrap-carousel" data-slide-to="2"></li>
+            <li data-target="#minimal-bootstrap-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#minimal-bootstrap-carousel" data-slide-to="1"></li>
+            <li data-target="#minimal-bootstrap-carousel" data-slide-to="2"></li>
         </ul>
     </div>
 
@@ -58,28 +58,21 @@
         <div class="auto-container">
             <div class="highlight-carousel owl-carousel owl-theme">
                 <!-- Highlight Block -->
-                <div class="highlight-block">
-                    <div class="inner-box">
-                        <div class="icon-box"><span class="machinery-icon-factory"></span></div>
-                        <div class="text">We are <span> ISO 9001:2005</span> certified company, It is a long established  fact that a reader.</div>
-                    </div>
-                </div>
 
-                <!-- Highlight Block -->
-                <div class="highlight-block">
-                    <div class="inner-box">
-                        <div class="icon-box"><span class="machinery-icon-factory"></span></div>
-                        <div class="text">We are <span> ISO 9001:2005</span> certified company, It is a long established  fact that a reader.</div>
-                    </div>
-                </div>
+                @foreach($announcements as $announcement)
 
-                <!-- Highlight Block -->
-                <div class="highlight-block">
-                    <div class="inner-box">
-                        <div class="icon-box"><span class="machinery-icon-factory"></span></div>
-                        <div class="text">We are <span> ISO 9001:2005</span> certified company, It is a long established  fact that a reader.</div>
+                    <div class="highlight-block">
+                        <div class="inner-box">
+                            <div class="icon-box"><span class="machinery-icon-factory"></span></div>
+                            <div class="text">
+                                {{$announcement->body}}
+                            </div>
+                        </div>
                     </div>
-                </div>
+
+                @endforeach
+
+
             </div>
         </div>
     </div>
@@ -89,108 +82,33 @@
     <section class="services-section">
         <div class="auto-container">
             <div class="sec-title text-center">
-                <h4>Our Services</h4>
-                <h2>Our Market Sectors</h2>
+                <h4>Hidropar</h4>
+                <h2>Hizmetlerimiz</h2>
             </div>
 
             <div class="services-carousel owl-carousel owl-theme">
 
-                <!-- Services Block -->
-                <div class="services-block">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure><img src="images/resource/service-1.jpg" alt=""></figure>
-                            <div class="overlay-box">
-                                <div class="btn-box">
-                                    <a href="#"><i class="icon arrow-top-right"></i>Read More</a>
+                @foreach($services as $service)
+                    <div class="services-block">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure><img src="{{Voyager::image($service->image)}}" alt=""></figure>
+                                <div class="overlay-box">
+                                    <div class="btn-box">
+                                        <a href="#"><i class="icon arrow-top-right"></i>Detay</a>
+                                    </div>
                                 </div>
+                                <div class="title"><h3>{{$service->title}}</h3> <i class="icon flaticon-user-1"></i></div>
                             </div>
-                            <div class="title"><h3>Construction Products</h3> <i class="icon flaticon-user-1"></i></div>
                         </div>
                     </div>
-                </div>
+                @endforeach
 
-                <!-- Services Block -->
-                <div class="services-block">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure><img src="images/resource/service-2.jpg" alt=""></figure>
-                            <div class="overlay-box">
-                                <div class="btn-box">
-                                    <a href="#"><i class="icon arrow-top-right"></i>Read More</a>
-                                </div>
-                            </div>
-                            <div class="title"><h3>Aero Space Services</h3> <i class="icon flaticon-departures-1"></i></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Services Block -->
-              {{--  <div class="services-block">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure><img src="images/resource/service-3.jpg" alt=""></figure>
-                            <div class="overlay-box">
-                                <div class="btn-box">
-                                    <a href="#"><i class="icon arrow-top-right"></i>Read More</a>
-                                </div>
-                            </div>
-                            <div class="title"><h3>Railway Infrastructure</h3> <i class="icon flaticon-railway-1"></i></div>
-                        </div>
-                    </div>
-                </div>--}}
-
-
-                <!-- Services Block -->
-                <div class="services-block">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure><img src="images/resource/service-1.jpg" alt=""></figure>
-                            <div class="overlay-box">
-                                <div class="btn-box">
-                                    <a href="#"><i class="icon arrow-top-right"></i>Read More</a>
-                                </div>
-                            </div>
-                            <div class="title"><h3>Construction Products</h3> <i class="icon flaticon-user-1"></i></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Services Block -->
-                <div class="services-block">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure><img src="images/resource/service-2.jpg" alt=""></figure>
-                            <div class="overlay-box">
-                                <div class="btn-box">
-                                    <a href="#"><i class="icon arrow-top-right"></i>Read More</a>
-                                </div>
-                            </div>
-                            <div class="title"><h3>Aero Space Services</h3> <i class="icon flaticon-departures-1"></i></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Services Block -->
-                <div class="services-block">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure><img src="images/resource/service-3.jpg" alt=""></figure>
-                            <div class="overlay-box">
-                                <div class="btn-box">
-                                    <a href="#"><i class="icon arrow-top-right"></i>Read More</a>
-                                </div>
-                            </div>
-                            <div class="title"><h3>Railway Infrastructure</h3> <i class="icon flaticon-railway-1"></i></div>
-                        </div>
-                    </div>
-                </div>
             </div>
 
             <!-- info box -->
             <div class="info-box">
-                <h3>Since 1964, We provide best solutions for our valuable customers.</h3>
-                <a href="#"><i class="icon flaticon-email"></i>Getaquote@Machinery.com</a>
+                <h3>asdSince 1964, We provide best solutions for our valuable customers.</h3>
             </div>
         </div>
     </section>
