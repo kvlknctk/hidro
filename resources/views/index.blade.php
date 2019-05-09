@@ -1,12 +1,9 @@
 @extends('layout.master')
 
-
-
-
 @section('content')
 
     <div id="minimal-bootstrap-carousel" class="carousel slide carousel-fade slider-home-one" data-ride="carousel">
-        <!-- Wrapper for slides -->
+
         <div class="carousel-inner" role="listbox">
 
             @php $first = 1; @endphp
@@ -23,7 +20,7 @@
                                         <p class="text">{!! $slider->description !!}</p>
                                         <a href="#" class="theme-btn btn-style-one">asd</a>
                                         {{--<a href="#" class="theme-btn btn-style-two">Market Sectors</a>--}}
-                                    </div><!-- /.main-banner-content -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -53,11 +50,9 @@
     </div>
 
 
-    <!-- Highlights -->
     <div class="highlights dark-bg">
         <div class="auto-container">
             <div class="highlight-carousel owl-carousel owl-theme">
-                <!-- Highlight Block -->
 
                 @foreach($announcements as $announcement)
 
@@ -72,11 +67,9 @@
 
                 @endforeach
 
-
             </div>
         </div>
     </div>
-    <!-- End Highlights -->
 
     <!-- Services Section -->
     <section class="services-section">
