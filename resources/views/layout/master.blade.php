@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     {!! SEO::generate() !!}
 
-    <!-- Stylesheets -->
+    <!-- Stil dosyları -->
     <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
     <link href="{{asset('css/style.css')}}" rel="stylesheet">
     <link href="{{asset('css/responsive.css')}}" rel="stylesheet">
 
-    <!--Favicon-->
+    <!--Ikonlar-->
     <link rel="shortcut icon" href="{{asset('images/favicon.png')}}" type="image/x-icon">
     <link rel="icon" href="{{asset('images/favicon.png')}}" type="image/x-icon">
-    <!-- Responsive -->
+    <!-- Mobil Uyumluluk -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
@@ -22,12 +22,11 @@
 <body>
 <div class="page-wrapper">
 
-    <!-- Preloader -->
+    <!-- Yukleyici -->
     <div class="preloader"></div>
 
-    <!-- Main Header-->
+    <!-- Ana Başlık-->
     <header class="main-header style-two ">
-        <!--Header Top-->
         <div class="header-top">
             <div class="auto-container">
                 <div class="inner-container clearfix">
@@ -102,7 +101,7 @@
                                     <a href="{{setting('sosyal-medya.facebook')}}"><i class="fa fa-facebook-f"></i></a>
                                 @endif
 
-                            </div><!-- /.social-icons -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -245,65 +244,64 @@
                         </div>
                     </div>
 
-                    <!--Footer Column-->
+                    <!--Footer Kolunu-->
                     <div class="footer-column col-md-4 col-sm-6 col-xs-12">
                         <div class="footer-widget contact-widget">
                             <div class="single-contact-widget">
                                 <div class="icon-box">
                                     <i class="machinery-icon-telephone"></i>
-                                </div><!-- /.icon-box -->
+                                </div>
                                 <div class="text-box">
                                     <h3>For Business Dealing:</h3>
                                     <span>888-000-1234</span>
                                     <p>Available 9:00 - 7:00 all days.</p>
-                                </div><!-- /.text-box -->
-                            </div><!-- /.single-contact-widget -->
+                                </div>
+                            </div>
                             <div class="single-contact-widget">
                                 <div class="icon-box">
                                     <i class="machinery-icon-map"></i>
-                                </div><!-- /.icon-box -->
+                                </div>
                                 <div class="text-box">
                                     <p>Big Smart Stareet, 2nd Cross <br> Newyork, USA 1002.</p>
-                                </div><!-- /.text-box -->
-                            </div><!-- /.single-contact-widget -->
+                                </div>
+                            </div>
                             <div class="single-contact-widget">
                                 <div class="icon-box">
                                     <i class="machinery-icon-send"></i>
-                                </div><!-- /.icon-box -->
+                                </div>
                                 <div class="text-box">
                                     <h3>Mail Us at</h3>
                                     <p>Machinery@support.com</p>
-                                </div><!-- /.text-box -->
-                            </div><!-- /.single-contact-widget -->
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--Footer Bottom-->
+        <!--Footer Alanı-->
         <div class="footer-bottom">
             <div class="auto-container clearfix">
                 <div class="row">
                     <div class="col-md-4 col-sm-4 col-xs-12 text-left">
                         <div class="copyright-text">{{date('Y')}} &copy; All Rights Reserved by Hidropar Eskişehir.</div>
-                    </div><!-- /.col-md-4 -->
+                    </div>
                     <div class="col-md-4 col-sm-4 col-xs-12">
-                    </div><!-- /.col-md-4 -->
+                    </div>
                     <div class="col-md-4 col-sm-4 col-xs-12 text-right">
                         <a href="https://eruzay.com.tr">
                             <img src="{{asset('img/eruzay.png')}}" width="85" alt="Eruzay Yazılım">
                         </a>
-                    </div><!-- /.col-md-4 -->
-                </div><!-- /.row -->
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
-    <!-- End Main Footer -->
-</div>
-<!--End pagewrapper-->
 
-<!--Scroll to top-->
+</div>
+
+
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-arrow-up"></span></div>
 
 <script src="{{asset('js/jquery.js')}}"></script>
