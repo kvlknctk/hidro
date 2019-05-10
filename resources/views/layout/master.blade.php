@@ -164,7 +164,7 @@
 
                     <!-- Outer Box-->
                     <div class="outer-box">
-                        <div class="link-box"><a href="contact.html" class="theme-btn btn-style-one">Get a Quote</a></div>
+                        <div class="link-box"><a href="contact.html" class="theme-btn btn-style-one">Ulaşım</a></div>
                     </div>
                 </div>
             </div>
@@ -193,60 +193,9 @@
 
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
-                                <li class="current dropdown"><a href="#">Home</a>
-                                    <ul>
-                                        <li><a href="index.html">Home One</a></li>
-                                        <li><a href="index2.html">Home Two</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a href="#">About Us</a>
-                                    <ul>
-                                        <li><a href="about.html">About Company</a></li>
-                                        <li><a href="testimonial.html">Testimonials</a></li>
-                                        <li><a href="faqs.html">FAQ’s</a></li>
-                                        <li><a href="pricing.html">Pricing Table</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a href="#">Market Sectors</a>
-                                    <ul>
-                                        <li><a href="market-sector.html">Market Sectors</a></li><li><a href="market-sector-single.html">Construction Products</a></li>
-                                        <li><a href="aero-space-services.html">Aero Space Services</a></li>
-                                        <li><a href="railway-infrastructure.html">Railway Infrastructure</a></li>
-                                        <li><a href="ship-building-industry.html">Ship Building Industry</a></li>
-                                        <li><a href="power-and-energy.html">Power and Energy</a></li>
-                                        <li><a href="automative-system.html">Automative System</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a href="#">Projects</a>
-                                    <ul>
-                                        <li><a href="projects.html">Projects Default</a></li>
-                                        <li><a href="projects-with-filter.html">Projects With Filter</a></li>
-                                        <li><a href="projects-modern.html">Projects Modern</a></li>
-                                        <li><a href="projects-single.html">Single Project</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a href="#">News</a>
-                                    <ul>
-                                        <li><a href="blog.html">Blog Default</a></li>
-                                        <li><a href="blog-large-image.html">Blog Large Image</a></li>
-                                        <li><a href="blog-single.html">Single Post</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a href="#">Shop</a>
-                                    <ul>
-                                        <li><a href="shop.html">Shop Products</a></li>
-                                        <li><a href="shop-single.html">Product Single</a></li>
-                                        <li><a href="shoping-cart.html">Shopping Cart</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
-                                        <li><a href="login.html">My Account</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a href="#">Contact Us</a>
-                                    <ul>
-                                        <li><a href="contact.html">Contact us 01</a></li>
-                                        <li><a href="contact-2.html">Contact us 02</a></li>
-                                    </ul>
-                                </li>
+                                <li><a href="{{route('index')}}">Anasayfa</a></li>
+
+
                             </ul>
                         </div>
                     </nav><!-- Main Menu End-->
