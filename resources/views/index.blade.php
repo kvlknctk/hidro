@@ -99,10 +99,7 @@
 
             </div>
 
-            <!-- info box -->
-            <div class="info-box">
-                <h3>asdSince 1964, We provide best solutions for our valuable customers.</h3>
-            </div>
+
         </div>
     </section>
     <!--End Services Section -->
