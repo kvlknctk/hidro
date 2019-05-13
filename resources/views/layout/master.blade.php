@@ -152,7 +152,6 @@
                         </div>
                     </div>
 
-                    Built enviable reputation in consumer goods, heavy industry, high tech, manufacturing, medical, vehicle our works sectors multi disciplinary team of engineering & experts, who pursues desires.
 
                     <!-- Outer Box-->
                     <div class="outer-box">
