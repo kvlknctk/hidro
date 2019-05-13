@@ -14,6 +14,7 @@
 Route::get('/', ['as' => 'index', 'uses' => 'HomeCTRL@index']);
 Route::get('/iletisim', ['as' => 'contact', 'uses' => 'HomeCTRL@contact']);
 Route::get('/hizmetler', ['as' => 'services', 'uses' => 'HomeCTRL@services']);
+Route::get('/kurumsal', ['as' => 'corporate', 'uses' => 'HomeCTRL@corporate']);
 
 
 

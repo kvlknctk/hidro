@@ -148,21 +148,39 @@
                 <!-- Info Column -->
                 <div class="info-column col-md-6 col-sm-12 col-xs-12">
                     <div class="sec-title">
-                        <h4>Company</h4>
-                        <h2>About Our Company</h2>
+                        <h4>{{setting('site.company_name')}}</h4>
+                        <h2>Kurumsal</h2>
                     </div>
                     <div class="about-company">
-                        <h4>We are leading manufacturing company in european <br> countries, serving sice 1964.</h4>
+                        <h4>{{setting('site.company_name')}} kurumsal çözümleriyle ön sahnede yer alır ve sizin için en iyi seçenekleri sunar.</h4>
                         <div class="info-tabs tabs-box">
                             <ul class="tab-buttons">
-                                <li data-tab="#info-tab-1" class="tab-btn active-btn">About Company</li>
+                               {{-- <li data-tab="#info-tab-1" class="tab-btn active-btn">About Company</li>
                                 <li data-tab="#info-tab-2" class="tab-btn ">Our Mission</li>
-                                <li data-tab="#info-tab-3" class="tab-btn ">Our Vission</li>
+                                <li data-tab="#info-tab-3" class="tab-btn ">Our Vission</li>--}}
+
+                                @php $first = 1; @endphp
+                                @foreach($corporate as $corp)
+                                    <li data-tab="#{{$corp->slug}}" class="tab-btn @if($first == 1) active-btn @endif">{{$corp->title}}</li>
+                                    @php $first++; @endphp
+                                @endforeach
                             </ul>
 
                             <div class="tabs-content">
                                 <!--Tab / Active Tab-->
-                                <div class="tab active-tab" id="info-tab-1">
+                                @php $first = 1; @endphp
+                                @foreach($corporate as $corp)
+                                    <div class="tab @if($first == 1) active-tab @endif" id="{{$corp->slug}}">
+{{--
+                                        <h3>{{$corp->title}}</h3>
+--}}
+                                        <div class="text">
+                                            {{$corp->short_description}}
+                                        </div>
+                                    </div>
+                                    @php $first++; @endphp
+                                @endforeach
+                                {{--<div class="tab active-tab" id="info-tab-1">
                                     <h3>We are Reliable & Experienced manufacturing Company.</h3>
                                     <div class="text">Built enviable reputation in consumer goods, heavy industry, high tech, manufacturing, medical, vehicle  our  works sectors multi disciplinary team of engineering & experts, who  pursues desires.</div>
                                 </div>
@@ -177,10 +195,10 @@
                                 <div class="tab" id="info-tab-3">
                                     <h3>We are Reliable & Experienced manufacturing Company.</h3>
                                     <div class="text">Built enviable reputation in consumer goods, heavy industry, high tech, manufacturing, medical, vehicle  our  works sectors multi disciplinary team of engineering & experts, who  pursues desires.</div>
-                                </div>
+                                </div>--}}
                             </div>
                         </div>
-                        <div class="link-box"><a href="market-sector-single.html"><i class="machinery-icon-next"></i> Read More</a></div>
+                        <div class="link-box"><a href="{{route('corporate')}}"><i class="machinery-icon-next"></i> Daha Fazla</a></div>
                     </div>
                 </div>
 

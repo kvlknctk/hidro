@@ -3,6 +3,7 @@
     namespace App\Http\Controllers;
 
     use App\Announcement;
+    use App\Corporate;
     use App\Service;
     use App\Slider;
     use Illuminate\Http\Request;
@@ -18,9 +19,10 @@
             $sliders       = Slider::all();
             $announcements = Announcement::limit(4)->get();
             $services      = Service::limit(10)->get();
+            $corporate       = Corporate::get();
 
             return view('index', compact(
-                'sliders', 'announcements', 'services'
+                'sliders', 'announcements', 'services', 'corporate'
             ));
         }
 
@@ -38,6 +40,12 @@
         {
             SEO::setTitle('Servis detayı başlığı burada yer alacak. ');
             SEO::setDescription('Servis detayları hakkında açıklama burada yer alacak. ');
+        }
+
+        public function corporate()
+        {
+
+
         }
 
         public function works()
