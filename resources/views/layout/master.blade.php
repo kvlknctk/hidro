@@ -142,7 +142,7 @@
                                     <div class="form-container">
                                         <form method="post" action="blog.html">
                                             <div class="form-group">
-                                                <input type="search" name="field-name" value="" placeholder="Search Here" required="">
+                                                <input type="search" name="field-name" value="" placeholder="Arama Alanı" required="">
                                                 <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
                                             </div>
                                         </form>
@@ -151,6 +151,8 @@
                             </ul>
                         </div>
                     </div>
+
+                    Built enviable reputation in consumer goods, heavy industry, high tech, manufacturing, medical, vehicle our works sectors multi disciplinary team of engineering & experts, who pursues desires.
 
                     <!-- Outer Box-->
                     <div class="outer-box">
