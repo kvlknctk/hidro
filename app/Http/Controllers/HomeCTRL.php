@@ -24,12 +24,26 @@
             ));
         }
 
+        public function services()
+        {
+            SEO::setTitle(trans('seo.titles.services'));
+            SEO::setDescription(trans('seo.descriptions.services'));
+
+            $services = Service::get();
+
+            return view('services', compact('services'));
+        }
+
+        public function service_detail($slug)
+        {
+            SEO::setTitle('Servis detayı başlığı burada yer alacak. ');
+            SEO::setDescription('Servis detayları hakkında açıklama burada yer alacak. ');
+        }
+
         public function works()
         {
             SEO::setTitle(trans('seo.titles.works'));
             SEO::setDescription(trans('seo.descriptions.works'));
-
-
         }
 
         public function work_detail($slug)
@@ -46,21 +60,7 @@
 
         }
 
-        public function services()
-        {
-            SEO::setTitle(trans('seo.titles.services'));
-            SEO::setDescription(trans('seo.descriptions.services'));
 
-            $services = Service::get();
-
-            return view('services', compact('services'));
-        }
-
-        public function service_detail($slug)
-        {
-            SEO::setTitle('Servis detayı başlığı burada yer alacak. ');
-            SEO::setDescription('Servis detayları hakkında açıklama burada yer alacak. ');
-        }
 
         public function human_resources()
         {
