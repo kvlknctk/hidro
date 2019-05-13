@@ -209,8 +209,8 @@
                         <div class="about-block">
                             <div class="inner-box">
                                 <span class="icon icon-gear"></span>
-                                <h4><a href="market-sector.html">Smart Technology</a></h4>
-                                <div class="text">Encounter consequences that are extremely our painful again is there desires.</div>
+                                <h4>Akıllı Teknoloji</h4>
+                                <div class="text">Müşterilerimize uzaktan yönetilebilir ve raporlanabilir teknoljiler sunuyoruz.</div>
                             </div>
                         </div>
 
@@ -218,8 +218,8 @@
                         <div class="about-block">
                             <div class="inner-box">
                                 <span class="icon icon-clock"></span>
-                                <h4><a href="market-sector.html">Punctual Delivery Time</a></h4>
-                                <div class="text">To take trivial example, which of us ever physical except to obtain some advantage.</div>
+                                <h4>Zamanında Teslimat</h4>
+                                <div class="text">Belirlenen gün ve saat içerisinde tüm işimizi tamamlamak için büyük bir gayret gösteriyoruz.</div>
                             </div>
                         </div>
 
@@ -227,8 +227,8 @@
                         <div class="about-block">
                             <div class="inner-box">
                                 <span class="icon icon-worker"></span>
-                                <h4><a href="market-sector.html">Team of Professionals</a></h4>
-                                <div class="text">Any right to find fault with a man who chooses to enjoy a pleasure that has no annoying..</div>
+                                <h4>Uzman Kadro</h4>
+                                <div class="text">Ekibimiz çok çalışmanın yanında akılcı çözümleri ile kendini öne çıkarıyor..</div>
                             </div>
                         </div>
                     </div>
