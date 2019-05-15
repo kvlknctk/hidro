@@ -230,7 +230,7 @@
                                 <ul class="list clearfix">
 
                                     @foreach($links as $link)
-                                        <li><a href="about.html">About Company</a></li>
+                                        <li><a href="{{$link->link}}">{{$link->title}}</a></li>
                                     @endforeach
 
                                 </ul>
