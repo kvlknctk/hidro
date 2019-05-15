@@ -229,18 +229,10 @@
                             <div class="widget-content">
                                 <ul class="list clearfix">
 
-                                    <li><a href="about.html">About Company</a></li>
-                                    <li><a href="market-sector.html">Our Services</a></li>
-                                    <li><a href="projects.html">Latest Projects</a></li>
-                                    <li><a href="testimonial.html">Testimonials</a></li>
-                                    <li><a href="market-sector-single.html">Why Choose Us</a></li>
-                                    <li><a href="shop.html">Shop Products</a></li>
-                                    <li><a href="contact.html">Get a Quote</a></li>
-                                    <li><a href="about.html">Site Map</a></li>
-                                    <li><a href="blog.html">Latest From Blog</a></li>
-                                    <li><a href="faqs.html">FAQ’s</a></li>
-                                    <li><a href="contact-2.html">Contact Us</a></li>
-                                    <li><a href="faqs.html">Private Policy</a></li>
+                                    @foreach($links as $link)
+                                        <li><a href="about.html">About Company</a></li>
+                                    @endforeach
+
                                 </ul>
                             </div>
                         </div>

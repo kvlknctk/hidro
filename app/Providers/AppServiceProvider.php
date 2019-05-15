@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Link;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +24,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        view()->composer('layout.master', function($view){
+           $view->with('links', Link::get());
+        });
     }
 }
