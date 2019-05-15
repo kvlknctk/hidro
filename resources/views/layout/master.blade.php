@@ -225,9 +225,10 @@
                     <!--Footer Column-->
                     <div class="footer-column col-md-4 col-sm-6 col-xs-12">
                         <div class="footer-widget links-widget">
-                            <div class="widget-title"><h2>Usefull Links</h2></div>
+                            <div class="widget-title"><h2>Faydalı Bağlantılar</h2></div>
                             <div class="widget-content">
                                 <ul class="list clearfix">
+
                                     <li><a href="about.html">About Company</a></li>
                                     <li><a href="market-sector.html">Our Services</a></li>
                                     <li><a href="projects.html">Latest Projects</a></li>
@@ -253,9 +254,9 @@
                                     <i class="machinery-icon-telephone"></i>
                                 </div>
                                 <div class="text-box">
-                                    <h3>For Business Dealing:</h3>
-                                    <span>888-000-1234</span>
-                                    <p>Available 9:00 - 7:00 all days.</p>
+                                    <h3>Müşteri Hizmetleri:</h3>
+                                    <span>{{setting('iletisim.tel1')}}</span>
+                                    <p>{{setting('iletisim.tel2')}}</p>
                                 </div>
                             </div>
                             <div class="single-contact-widget">
@@ -263,7 +264,10 @@
                                     <i class="machinery-icon-map"></i>
                                 </div>
                                 <div class="text-box">
-                                    <p>Big Smart Stareet, 2nd Cross <br> Newyork, USA 1002.</p>
+                                    <p>
+                                        {{setting('iletisim.adres')}} <br>
+                                        {{setting('iletisim.sehir')}}
+                                    </p>
                                 </div>
                             </div>
                             <div class="single-contact-widget">
@@ -271,8 +275,8 @@
                                     <i class="machinery-icon-send"></i>
                                 </div>
                                 <div class="text-box">
-                                    <h3>Mail Us at</h3>
-                                    <p>Machinery@support.com</p>
+                                    <p>{{setting('iletisim.mail')}}</p>
+                                    <p>{{setting('iletisim.satis_email')}}</p>
                                 </div>
                             </div>
                         </div>
