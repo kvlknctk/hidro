@@ -205,24 +205,28 @@
             <!--Widgets Section-->
             <div class="widgets-section">
                 <div class="row clearfix">
-                    <!--Footer Column-->
+                    <!--Kurumsal Footer Kolunu-->
                     <div class="footer-column col-md-4 col-sm-6 col-xs-12">
-                        <div class="logo"><a href="index.html"><img src="images/logo-2.png" alt=""></a></div>
+                        <div class="logo"><a href="{{route('index')}}"><img src="{{asset('img/hidropar_footer_logo.png')}}" alt="Hidropar Footer Logo"></a></div>
                         <div class="footer-widget subscribe-widget">
                             <div class="widget-content">
                                 <div class="text">
-                                    <h4>Let’s join & create something together</h4>
-                                    <p>Must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and will give you completed.</p>
-                                    <form class="subscribe-form">
-                                        <input type="text" name="email" placeholder="Enter your email address...">
-                                        <button type="submit"><i class="machinery-icon-next"></i>Subscribe Us</button>
+                                    {{--<h4>Let’s join & create something together</h4>--}}
+                                    <p>
+                                        Lorem ipsum dolor sit amet. Deneme olması gereken yazılar bir şekilde burada yer alacak.
+                                        Lorem ipsum dolor sit amet. Deneme olması gereken yazılar bir şekilde burada yer alacak.
+                                    </p>
+                                    <form class="subscribe-form" method="post">
+                                        @csrf
+                                        <input type="text" name="email" placeholder="E-Posta Listemize Katılın">
+                                        <button type="submit"><i class="machinery-icon-next"></i>Listeye Ekle </button>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!--Footer Column-->
+                    <!--Faydalı bağlantılar bölümü -->
                     <div class="footer-column col-md-4 col-sm-6 col-xs-12">
                         <div class="footer-widget links-widget">
                             <div class="widget-title"><h2>Faydalı Bağlantılar</h2></div>
