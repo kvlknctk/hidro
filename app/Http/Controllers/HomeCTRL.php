@@ -19,7 +19,7 @@
             $sliders       = Slider::all();
             $announcements = Announcement::limit(4)->get();
             $services      = Service::limit(10)->get();
-            $corporate       = Corporate::get();
+            $corporate     = Corporate::get();
 
             return view('index', compact(
                 'sliders', 'announcements', 'services', 'corporate'
