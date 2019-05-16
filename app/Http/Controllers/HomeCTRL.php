@@ -33,7 +33,7 @@
 
             $services = Service::get();
 
-            return view('services', compact('services'));
+            return view('service', compact('services'));
         }
 
         public function service_detail($slug)
