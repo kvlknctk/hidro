@@ -1221,6 +1221,10 @@ img {
     background: #181818;
 }
 
+.main-header.hidropar .header-lower {
+    background: #181818;
+}
+
 .main-header.style-two .outer-box .link-box {
     padding: 14.5px 0;
 }
