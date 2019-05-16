@@ -5,6 +5,6 @@
                                    </ul>
                                </li>--}}
 
-<li><a href="{{route('index')}}">Anasayfa</a></li>
-<li><a href="{{route('services')}}">Hizmetler</a></li>
-<li><a href="{{route('contact')}}">İletişim</a></li>
+<li class="{{active(['index'], 'current')}}"><a href="{{route('index')}}">Anasayfa</a></li>
+<li class="{{active(['services'], 'current')}}"><a href="{{route('services')}}">Hizmetler</a></li>
+<li class="{{active(['iletisim'], 'current')}}"><a href="{{route('contact')}}">İletişim</a></li>
