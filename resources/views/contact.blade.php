@@ -28,26 +28,28 @@
                             <ul>
                                 <li>
                                     <span class="icon flaticon-place"></span>
-                                    <h5>Big Smart Str, 2nd Cross</h5>
-                                    <p>Newyork, USA 1002.</p>
+                                    <h5>{{setting('iletisim.adres')}}</h5>
+                                    <p>{{setting('iletisim.sehir')}}</p>
                                 </li>
 
                                 <li>
                                     <span class="icon flaticon-support"></span>
-                                    <h5>Call Us On</h5>
-                                    <p><a href="#">1-800-784-533 & 544</a></p>
+                                    <h5>Telefonlar</h5>
+                                    <p><a href="#">{{setting('iletisim.tel1')}}</a></p>
+                                    <p><a href="#">{{setting('iletisim.tel2')}}</a></p>
                                 </li>
 
                                 <li>
                                     <span class="icon flaticon-plane"></span>
-                                    <h5>Mail Us at</h5>
-                                    <p><a href="#">Machinery@Support.com</a></p>
+                                    <h5>Mail</h5>
+                                    <p><a href="#">{{setting('iletisim.mail')}}</a></p>
+                                    <p><a href="#">{{setting('iletisim.satis')}}</a></p>
                                 </li>
 
                                 <li>
                                     <span class="icon flaticon-watch"></span>
-                                    <h5>Working Hours</h5>
-                                    <p>Mon-Satday: 09.00am to 10.00pm</p>
+                                    <h5>Çalışma Saatleri</h5>
+                                    <p>Pzt-Cmt: 09.00 - 18.</p>
                                 </li>
                             </ul>
                         </div>
@@ -58,8 +60,8 @@
                 <div class="form-column col-md-8 col-sm-12 col-xs-12">
                     <div class="inner-column">
                         <div class="sec-title">
-                            <h2>Send Message Us</h2>
-                            <div class="text">We have 74 branches in US and 145 branches in world wide, you can reach any branch at your desk,our experts will help you 24/7.</div>
+                            <h2>Bize Mesaj Yazın</h2>
+                            <div class="text">Görüşlerinizi ya da firmamıza sormanız gereken soruları aşağıdaki formu kullanarak gönderebilirsiniz. Gerekli görüldüğü takdirde anında geridönüş yapılacaktır. </div>
                         </div>
                         <!--Contact Form-->
                         <div class="contact-form style-three">
@@ -67,29 +69,29 @@
                                 <div class="row clearfix">
                                     <div class="left-column col-md-6 col-sm-6 col-xs-12">
                                         <div class="form-group">
-                                            <label>Name</label>
-                                            <input type="text" name="username" value="" placeholder="Your Name" required>
+                                            <label>İsim</label>
+                                            <input type="text" name="name" value="" placeholder="İsminiz" required>
                                         </div>
 
                                         <div class="form-group">
-                                            <label>Email</label>
-                                            <input type="email" name="email" value="" placeholder="Email Address" required>
+                                            <label>E-Posta</label>
+                                            <input type="email" name="email" value="" placeholder="E-Posta" required>
                                         </div>
 
                                         <div class="form-group">
-                                            <label>Subject</label>
-                                            <input type="text" name="subject" value="" placeholder="Subject" required>
+                                            <label>Konu</label>
+                                            <input type="text" name="subject" value="" placeholder="Konu" required>
                                         </div>
                                     </div>
                                     <div class="column col-md-6 col-sm-6 col-xs-12">
                                         <div class="form-group border-left">
-                                            <label>Massage</label>
-                                            <textarea name="message" placeholder="Massage"></textarea>
+                                            <label>Mesajınız</label>
+                                            <textarea name="message" placeholder="Mesajınız..."></textarea>
                                         </div>
                                     </div>
                                     <div class="column col-md-12 col-sm-6 col-xs-12">
                                         <div class="form-group">
-                                            <button type="submit" class="theme-btn">Submit Now</button>
+                                            <button type="submit" class="theme-btn">Gönder</button>
                                         </div>
                                     </div>
                                 </div>
@@ -112,9 +114,9 @@
                  data-lng="144.955631"
                  data-type="roadmap"
                  data-hue="#ffc400"
-                 data-title="Envato"
+                 data-title="Tam Buradayız"
                  data-icon-path="images/icons/map-marker-2.png"
-                 data-content="Melbourne VIC 3000, Australia<br><a href='mailto:info@youremail.com'>info@youremail.com</a>">
+                 data-content="{{setting('iletisim.adres')}}<br><a href='mailto:{{setting('iletisim.mail')}}'>{{setting('iletisim.mail')}}</a>">
             </div>
         </div>
     </section>
