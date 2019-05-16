@@ -26,32 +26,37 @@
     <div class="preloader"></div>
 
     <!-- Ana Başlık-->
-    <header class="main-header style-two ">
+    <header class="main-header hidropar">
         <div class="header-top">
             <div class="auto-container">
                 <div class="inner-container clearfix">
                     <div class="top-left">
-                        <ul class="clearfix top-menu">
-                            <li><a href="#">İnsan Kaynakları </a></li>
-                            <li><a href="#">Destek Talebi</a></li>
-                            <li><a href="#">İletişim</a></li>
-
+                        <ul class="clearfix">
+                            <li><i class="icon flaticon-clock-circular-outline"></i> Pzt - Cmt: 09:00 - 18:00 </li>
+                            <li class="social-links"><span>Sosyal Ağlar :</span>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                                <a href="#"><i class="fa fa-rss"></i></a>
+                            </li>
                         </ul>
+
                     </div>
                     <div class="top-right clearfix">
-                        <ul class="clearfix right-info">
-                            <li><i class="icon flaticon-clock-circular-outline"></i> Mon - Fri: 09:00 - 18:00 </li>
-                        </ul>
-                        {{--<div class="language dropdownn">
-                            <a class="btn btn-default dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#"><span class="icon flaticon-globe"></span> California <i class="fa fa-angle-down"></i></a>
+{{--
+                        <div class="buy-now"><a href="#">Buy Now</a></div>
+--}}
+                        <div class="language dropdownn">
+                            <a class="btn btn-default dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#"><span class="icon flaticon-globe"></span> Hızlı Erişim <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu style-one" aria-labelledby="dropdownMenu1">
-                                <li><a href="#">California</a></li>
-                                <li><a href="#">Washington</a></li>
-                                <li><a href="#">Bristol</a></li>
-                                <li><a href="#">Georgetown</a></li>
+                                <li><a href="#">Servis Destek Talebi</a></li>
+                                <li><a href="#">İnsan Kaynakları Formu</a></li>
+                                <li><a href="#">İletişim</a></li>
                             </ul>
-                        </div>--}}
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -85,7 +90,7 @@
                             </ul>
                         </div>
 
-                        <!--social Box-->
+                       {{-- <!--social Box-->
                         <div class="upper-column info-box">
                             <div class="social-icons">
 
@@ -102,7 +107,7 @@
                                 @endif
 
                             </div>
-                        </div>
+                        </div>--}}
                     </div>
                 </div>
             </div>
@@ -155,7 +160,7 @@
 
                     <!-- Outer Box-->
                     <div class="outer-box">
-                        <div class="link-box"><a href="contact.html" class="theme-btn btn-style-one">Ulaşım</a></div>
+                        <div class="link-box"><a href="{{route('contact')}}" class="theme-btn btn-style-one">Ulaşım</a></div>
                     </div>
                 </div>
             </div>
