@@ -22,7 +22,7 @@
                 <div class="info-column col-md-4 col-sm-6 col-xs-12 ">
                     <div class="branch-info-box">
                         <div class="image-box">
-                            <div class="image"><a href="#"><img src="images/resource/branch-3.jpg" alt=""></a></div>
+                            <div class="image"><a href="#"><img src="{{Voyager::image(setting('iletisim.resim'))}}" alt=""></a></div>
                         </div>
                         <div class="lower-content">
                             <ul>
