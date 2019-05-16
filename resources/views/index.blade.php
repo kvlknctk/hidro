@@ -427,42 +427,13 @@
     <section class="client-carousel-wrapper">
         <div class="auto-container">
             <div class="clients-carousel owl-theme owl-carousel">
-                <div class="item">
-                    <img src="images/clients/1-1.png" alt="Awesome Image"/>
-                </div><!-- /.item -->
-                <div class="item">
-                    <img src="images/clients/1-2.png" alt="Awesome Image"/>
-                </div><!-- /.item -->
-                <div class="item">
-                    <img src="images/clients/1-3.png" alt="Awesome Image"/>
-                </div><!-- /.item -->
-                <div class="item">
-                    <img src="images/clients/1-4.png" alt="Awesome Image"/>
-                </div><!-- /.item -->
-                <div class="item">
-                    <img src="images/clients/1-1.png" alt="Awesome Image"/>
-                </div><!-- /.item -->
-                <div class="item">
-                    <img src="images/clients/1-2.png" alt="Awesome Image"/>
-                </div><!-- /.item -->
-                <div class="item">
-                    <img src="images/clients/1-3.png" alt="Awesome Image"/>
-                </div><!-- /.item -->
-                <div class="item">
-                    <img src="images/clients/1-4.png" alt="Awesome Image"/>
-                </div><!-- /.item -->
-                <div class="item">
-                    <img src="images/clients/1-1.png" alt="Awesome Image"/>
-                </div><!-- /.item -->
-                <div class="item">
-                    <img src="images/clients/1-2.png" alt="Awesome Image"/>
-                </div><!-- /.item -->
-                <div class="item">
-                    <img src="images/clients/1-3.png" alt="Awesome Image"/>
-                </div><!-- /.item -->
-                <div class="item">
-                    <img src="images/clients/1-4.png" alt="Awesome Image"/>
-                </div><!-- /.item -->
+                @foreach($references as $reference)
+                    <div class="item">
+                        <img src="{{Voyager::image($reference->image)}}" alt="{{$reference->name}}"/>
+                    </div>
+                @endforeach
+                <!-- /.item -->
+
             </div><!-- /.clien-carousel -->
         </div><!-- /.auto-container -->
     </section><!-- /.client-carousel-wrapper -->
