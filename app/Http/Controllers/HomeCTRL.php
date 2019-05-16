@@ -40,6 +40,11 @@
         {
             SEO::setTitle('Servis detayı başlığı burada yer alacak. ');
             SEO::setDescription('Servis detayları hakkında açıklama burada yer alacak. ');
+
+            $service = Service::whereSlug($slug)->firstOrFail();
+
+            dd($service);
+            return view('service', compact('service'));
         }
 
         public function corporate()
