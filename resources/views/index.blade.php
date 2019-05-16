@@ -392,32 +392,7 @@
                         </div>
                     </div>
                 </div><!-- /.col-md-4 -->
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <!-- News Block -->
-                    <div class="news-block">
-                        <div class="inner-box">
-                            <div class="image-box"><a href="blog-single.html"><img src="images/resource/news-3.jpg" alt=""></a></div>
-                            <div class="lower-content clearfix">
-                                <div class="info">
-                                    <ul>
-                                        <li><a href="#">Technology</a>, </li>
-                                        <li><a href="#">June 06, 2019</a></li>
-                                    </ul>
-                                </div>
-                                <h3><a href="blog-single.html">We won best factory award of the year 2015 & 16.</a></h3>
-
-                                <div class="text">Desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur which toil and pain can procure...</div>
-                                <div class="more-box clearfix">
-                                    <div class="author-box">
-                                        <img src="images/testimonials/3.png" alt="Awesome Image"/>
-                                        <span class="author-name">Christin Serrell</span>
-                                    </div><!-- /.author-box -->
-                                    <div class="link-box"><a href="blog-single.html">Read More</a> <span class="icon icon-aroow-right"></span></div>
-                                </div><!-- /.more-box -->
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- /.col-md-4 -->
+                <!-- /.col-md-4 -->
             </div><!-- /.row -->
         </div>
     </section>
