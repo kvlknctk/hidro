@@ -85,7 +85,7 @@
                     <div class="services-block">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure><img src="{{Voyager::image($service->image)}}" alt=""></figure>
+                                <figure><img src="{{Voyager::image($service->thumbnail('thumb'))}}" alt=""></figure>
                                 <div class="overlay-box">
                                     <div class="btn-box">
                                         <a href="#"><i class="icon arrow-top-right"></i>Detay</a>
