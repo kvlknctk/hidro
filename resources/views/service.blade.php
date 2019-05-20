@@ -25,10 +25,10 @@
 
                 @foreach($services as $service)
                     <!-- Services Block -->
-                        <div class="services-block col-md-4 col-sm-6 col-xs-12">
+                        <div class="services-block col-md-6 col-sm-6 col-xs-12">
                             <div class="inner-box">
                                 <div class="image-box">
-                                    <figure><img src="{{Voyager::image($service->image)}}" alt=""></figure>
+                                    <figure><img src="{{Voyager::image($service->thumbnail('thumb'))}}" alt=""></figure>
                                     <div class="overlay-box">
                                         <div class="btn-box">
                                             <a href="{{route('service_detail', ['slug' => $service->slug ])}}"><i class="icon arrow-top-right"></i>Detay</a>
