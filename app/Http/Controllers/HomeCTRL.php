@@ -6,6 +6,7 @@
     use App\Corporate;
     use App\Service;
     use App\Slider;
+    use App\Work;
     use Illuminate\Http\Request;
     use SEO;
 
@@ -20,9 +21,9 @@
             $announcements = Announcement::limit(4)->get();
             $services      = Service::limit(10)->get();
             $corporate     = Corporate::get();
-
+            $works          = Work::limit(10)->get();
             return view('index', compact(
-                'sliders', 'announcements', 'services', 'corporate'
+                'sliders', 'announcements', 'services', 'corporate', 'works'
             ));
         }
 

@@ -242,78 +242,29 @@
     <section class="project-section" style="background-image: url({{asset('images/background/1.jpg')}});">
         <div class="auto-container">
             <div class="sec-title light text-center">
-                <h4>Our Works</h4>
-                <h2>Latest Projects</h2>
+                <h4>Hidropar</h4>
+                <h2>Son Çalışmalarımız</h2>
             </div>
 
             <!--Carousel Box-->
             <div class="carousel-box">
                 <div class="project-carousel owl-carousel owl-theme">
-                    <!-- Project Block -->
-                    <div class="project-block">
-                        <div class="image-box">
-                            <figure><a href="images/resource/project-1.jpg" class="ligtbox-image" data-fancybox="gallery"><img src="images/resource/project-1.jpg" alt=""></a></figure>
-                            <div class="title-box">
-                                <h3><a href="projects-single.html">Rail Engine Manufacture</a></h3>
-                                <span class="tag">Engineering</span>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Project Block -->
-                    <div class="project-block">
-                        <div class="image-box">
-                            <figure><a href="images/resource/project-2.jpg" class="ligtbox-image" data-fancybox="gallery"><img src="images/resource/project-2.jpg" alt=""></a></figure>
-                            <div class="title-box">
-                                <h3><a href="projects-single.html">Rail Engine Manufacture</a></h3>
-                                <span class="tag">Construction</span>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Project Block -->
-                    <div class="project-block">
-                        <div class="image-box">
-                            <figure><a href="images/resource/project-3.jpg" class="ligtbox-image" data-fancybox="gallery"><img src="images/resource/project-3.jpg" alt=""></a></figure>
-                            <div class="title-box">
-                                <h3><a href="projects-single.html">Generate Natural Power</a></h3>
-                                <span class="tag">Power & Energy</span>
+                    @foreach($works as $work)
+                        <div class="project-block">
+                            <div class="image-box">
+                                <figure><a href="{{Voyager::image($work->image)}}" class="ligtbox-image" data-fancybox="gallery"><img src="{{Voyager::image($work->thumbnail('thumb'))}}" alt=""></a></figure>
+                                <div class="title-box">
+                                    <h3><a href="projects-single.html">{{$work->title}}</a></h3>
+                                    {{--<span class="tag">Çalışma</span>--}}
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    @endforeach
 
-                    <!-- Project Block -->
-                    <div class="project-block">
-                        <div class="image-box">
-                            <figure><a href="images/resource/project-1.jpg" class="ligtbox-image" data-fancybox="gallery"><img src="images/resource/project-1.jpg" alt=""></a></figure>
-                            <div class="title-box">
-                                <h3><a href="projects-single.html">Rail Engine Manufacture</a></h3>
-                                <span class="tag">Engineering</span>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Project Block -->
-                    <div class="project-block">
-                        <div class="image-box">
-                            <figure><a href="images/resource/project-2.jpg" class="ligtbox-image" data-fancybox="gallery"><img src="images/resource/project-2.jpg" alt=""></a></figure>
-                            <div class="title-box">
-                                <h3><a href="projects-single.html">Rail Engine Manufacture</a></h3>
-                                <span class="tag">Construction</span>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Project Block -->
-                    <div class="project-block">
-                        <div class="image-box">
-                            <figure><a href="images/resource/project-3.jpg" class="ligtbox-image" data-fancybox="gallery"><img src="images/resource/project-3.jpg" alt=""></a></figure>
-                            <div class="title-box">
-                                <h3><a href="projects-single.html">Generate Natural Power</a></h3>
-                                <span class="tag">Power & Energy</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
