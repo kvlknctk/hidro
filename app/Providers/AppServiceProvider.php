@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Corporate;
 use App\Link;
 use App\Reference;
 use Illuminate\Support\ServiceProvider;
@@ -27,6 +28,7 @@ class AppServiceProvider extends ServiceProvider
     {
         view()->composer('layout.master', function($view){
            $view->with('links', Link::get());
+           $view->with('corporates', Corporate::get());
         });
 
         view()->composer('index', function($view){
