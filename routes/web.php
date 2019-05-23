@@ -19,6 +19,9 @@ Route::get('/hizmetler/{slug}', ['as' => 'service_detail', 'uses' => 'HomeCTRL@s
 Route::get('/blog', ['as' => 'blog', 'uses' => 'HomeCTRL@blog']);
 Route::get('/blog/{slug}', ['as' => 'blog_detail', 'uses' => 'HomeCTRL@blog_detail']);
 
+Route::get('/calisma', ['as' => 'works', 'uses' => 'HomeCTRL@works']);
+Route::get('/calisma/{slug}', ['as' => 'work_detail', 'uses' => 'HomeCTRL@works_detail']);
+
 Route::get('/kurumsal', ['as' => 'corporate', 'uses' => 'HomeCTRL@corporate']);
 Route::get('/kurumsal/{slug}', ['as' => 'corporate_detail', 'uses' => 'HomeCTRL@corporate_detail']);
 
