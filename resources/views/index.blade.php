@@ -15,7 +15,7 @@
                             <div class="box valign-middle">
                                 <div class="content">
                                     <div class="main-banner-content" data-animation="animated fadeInUp">
-                                        <h3 class="title">Hidropar Eskişehir</h3>
+                                        <h3 class="title">{{setting('site.company_name')}}</h3>
                                         <h1>{{$slider->title}}</h1>
                                         <p class="text">{!! $slider->description !!}</p>
                                         <a href="#" class="theme-btn btn-style-one">asd</a>
@@ -75,8 +75,8 @@
     <section class="services-section">
         <div class="auto-container">
             <div class="sec-title text-center">
-                <h4>Hidropar</h4>
-                <h2>Hizmetlerimiz</h2>
+                <h4>{{setting('site.company_name')}}</h4>
+                <h2>Hizmetleri</h2>
             </div>
 
             <div class="services-carousel owl-carousel owl-theme">
@@ -242,14 +242,13 @@
     <section class="project-section" style="background-image: url({{asset('images/background/1.jpg')}});">
         <div class="auto-container">
             <div class="sec-title light text-center">
-                <h4>Hidropar</h4>
+                <h4>{{setting('site.company_name')}}</h4>
                 <h2>Son Çalışmalarımız</h2>
             </div>
 
             <!--Carousel Box-->
             <div class="carousel-box">
                 <div class="project-carousel owl-carousel owl-theme">
-
 
                     @foreach($works as $work)
                         <div class="project-block">
@@ -263,23 +262,20 @@
                         </div>
                     @endforeach
 
-
-
                 </div>
             </div>
         </div>
     </section>
-    <!--End Project Section -->
 
 
-    <!-- News Section -->
+    <!-- Blog yazıları bölümü -->
     <section class="news-section">
         <div class="auto-container">
             <div class="sec-title">
                 <div class="row">
                     <div class="col-md-4">
                         <h4>Haberler & Bloglar</h4>
-                        <h2>Hidropar Yazıları</h2>
+                        <h2>{{setting('site.company_name')}} Yazıları</h2>
                     </div>
                     <div class="col-md-5">
                         <div class="text">Hidropar'ın yayınlamış olduğu duyurular, yazılar ve teknoloji hakkında bir çok makaleye ulaşmak istiyorsanız devam edin. </div>
@@ -302,8 +298,8 @@
                                 <div class="lower-content clearfix">
                                     <div class="info">
                                         <ul>
-                                            <li><a href="#">Blog</a>, </li>
-                                            <li><a href="#">{{$blog->created_at->diffForHumans()}}</a></li>
+                                            <li><a href="{{route('blog')}}">Blog</a>, </li>
+                                            <li>{{$blog->created_at->diffForHumans()}}</li>
                                         </ul>
                                     </div>
                                     <h3><a href="blog-single.html">{{$blog->title}}</a></h3>
@@ -322,10 +318,9 @@
                     </div>
             @endforeach
 
-            </div><!-- /.row -->
+            </div>
         </div>
     </section>
-    <!--End News Section -->
 
 
     <section class="client-carousel-wrapper">
@@ -336,10 +331,8 @@
                         <img src="{{Voyager::image($reference->image)}}" alt="{{$reference->name}}"/>
                     </div>
                 @endforeach
-                <!-- /.item -->
-
-            </div><!-- /.clien-carousel -->
-        </div><!-- /.auto-container -->
-    </section><!-- /.client-carousel-wrapper -->
+            </div>
+        </div>
+    </section>
 
 @endsection
