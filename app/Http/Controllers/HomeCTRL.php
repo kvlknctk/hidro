@@ -83,6 +83,8 @@
             SEO::setTitle('Çalışma detayları burada yer alacak. ');
             SEO::setDescription('Çalışma burada yer alacak. ');
 
+            return $slug;
+
         }
 
         public function products($slug = null)
