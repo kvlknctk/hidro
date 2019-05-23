@@ -3,6 +3,7 @@
     namespace App\Http\Controllers;
 
     use App\Announcement;
+    use App\Blog;
     use App\Corporate;
     use App\Service;
     use App\Slider;
@@ -22,8 +23,10 @@
             $services      = Service::limit(10)->get();
             $corporate     = Corporate::get();
             $works          = Work::limit(10)->get();
+            $blogs          = Blog::limit(3)->get();
+
             return view('index', compact(
-                'sliders', 'announcements', 'services', 'corporate', 'works'
+                'sliders', 'announcements', 'services', 'corporate', 'works', 'blogs'
             ));
         }
 
