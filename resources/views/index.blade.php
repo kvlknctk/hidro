@@ -18,7 +18,9 @@
                                         <h3 class="title">{{setting('site.company_name')}}</h3>
                                         <h1>{{$slider->title}}</h1>
                                         <p class="text">{!! $slider->description !!}</p>
-                                        <a href="#" class="theme-btn btn-style-one">asd</a>
+                                        @if($slider->link)
+                                            <a href="{{$slider->link}}" class="theme-btn btn-style-one">Detay</a>
+                                        @endif
                                         {{--<a href="#" class="theme-btn btn-style-two">Market Sectors</a>--}}
                                     </div>
                                 </div>
@@ -30,9 +32,8 @@
 
             @endforeach
 
-
         </div>
-        <!-- Controls -->
+        <!-- Navigasyon Kontrol -->
         <a class="left carousel-control" href="#minimal-bootstrap-carousel" role="button" data-slide="prev">
             <i class="fa fa-angle-left"></i>
             <span class="sr-only">Önceki</span>
@@ -49,7 +50,7 @@
         </ul>
     </div>
 
-
+    <!-- Siyah Bar  -->
     <div class="highlights dark-bg">
         <div class="auto-container">
             <div class="highlight-carousel owl-carousel owl-theme">
@@ -71,7 +72,7 @@
         </div>
     </div>
 
-    <!-- Services Section -->
+    <!-- Hizmetler Bölümü  -->
     <section class="services-section">
         <div class="auto-container">
             <div class="sec-title text-center">
@@ -102,9 +103,8 @@
 
         </div>
     </section>
-    <!--End Services Section -->
 
-    <!-- What We Do -->
+    <!-- Ne Yapıyoruz Sayfası -->
     <section class="what-we-do">
         <div class="auto-container">
             <div class="row clearfix">
@@ -139,9 +139,8 @@
             </div>
         </div>
     </section>
-    <!--End What We Do -->
 
-    <!-- About Us -->
+    <!-- Kurumsal Bölümü -->
     <section class="about-us">
         <div class="auto-container">
             <div class="row clearfix">
@@ -167,35 +166,18 @@
                             </ul>
 
                             <div class="tabs-content">
-                                <!--Tab / Active Tab-->
+
                                 @php $first = 1; @endphp
                                 @foreach($corporate as $corp)
                                     <div class="tab @if($first == 1) active-tab @endif" id="{{$corp->slug}}">
-{{--
-                                        <h3>{{$corp->title}}</h3>
---}}
+                                        {{--<h3>{{$corp->title}}</h3>--}}
                                         <div class="text">
                                             {{$corp->short_description}}
                                         </div>
                                     </div>
                                     @php $first++; @endphp
                                 @endforeach
-                                {{--<div class="tab active-tab" id="info-tab-1">
-                                    <h3>We are Reliable & Experienced manufacturing Company.</h3>
-                                    <div class="text">Built enviable reputation in consumer goods, heavy industry, high tech, manufacturing, medical, vehicle  our  works sectors multi disciplinary team of engineering & experts, who  pursues desires.</div>
-                                </div>
 
-                                <!--Tab-->
-                                <div class="tab" id="info-tab-2">
-                                    <h3>We are Reliable & Experienced manufacturing Company.</h3>
-                                    <div class="text">Built enviable reputation in consumer goods, heavy industry, high tech, manufacturing, medical, vehicle  our  works sectors multi disciplinary team of engineering & experts, who  pursues desires.</div>
-                                </div>
-
-                                <!--Tab-->
-                                <div class="tab" id="info-tab-3">
-                                    <h3>We are Reliable & Experienced manufacturing Company.</h3>
-                                    <div class="text">Built enviable reputation in consumer goods, heavy industry, high tech, manufacturing, medical, vehicle  our  works sectors multi disciplinary team of engineering & experts, who  pursues desires.</div>
-                                </div>--}}
                             </div>
                         </div>
                         <div class="link-box"><a href="{{route('corporate')}}"><i class="machinery-icon-next"></i> Daha Fazla</a></div>
@@ -205,7 +187,6 @@
                 <!-- List Column -->
                 <div class="list-column col-md-6 col-sm-12 col-xs-12">
                     <div class="inner-column">
-                        <!-- About Block -->
                         <div class="about-block">
                             <div class="inner-box">
                                 <span class="icon icon-gear"></span>
@@ -214,7 +195,6 @@
                             </div>
                         </div>
 
-                        <!-- About Block -->
                         <div class="about-block">
                             <div class="inner-box">
                                 <span class="icon icon-clock"></span>
@@ -223,7 +203,6 @@
                             </div>
                         </div>
 
-                        <!-- About Block -->
                         <div class="about-block">
                             <div class="inner-box">
                                 <span class="icon icon-worker"></span>
@@ -236,9 +215,8 @@
             </div>
         </div>
     </section>
-    <!-- End About Us -->
 
-    <!-- Project Section -->
+    <!-- Çalışmalar Bölümü  -->
     <section class="project-section" style="background-image: url({{asset('images/background/1.jpg')}});">
         <div class="auto-container">
             <div class="sec-title light text-center">
@@ -246,7 +224,6 @@
                 <h2>Son Çalışmalarımız</h2>
             </div>
 
-            <!--Carousel Box-->
             <div class="carousel-box">
                 <div class="project-carousel owl-carousel owl-theme">
 
@@ -255,7 +232,7 @@
                             <div class="image-box">
                                 <figure><a href="{{Voyager::image($work->image)}}" class="ligtbox-image" data-fancybox="gallery"><img src="{{Voyager::image($work->thumbnail('thumb'))}}" alt=""></a></figure>
                                 <div class="title-box">
-                                    <h3><a href="projects-single.html">{{$work->title}}</a></h3>
+                                    <h3><a href="{{route('work_detail', ['slug' => $work->slug])}}">{{$work->title}}</a></h3>
                                     <span class="tag">Detay >></span>
                                 </div>
                             </div>
@@ -266,7 +243,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- Blog yazıları bölümü -->
     <section class="news-section">
@@ -281,7 +257,7 @@
                         <div class="text">Hidropar'ın yayınlamış olduğu duyurular, yazılar ve teknoloji hakkında bir çok makaleye ulaşmak istiyorsanız devam edin. </div>
                     </div>
                     <div class="col-md-3 text-right">
-                        <a href="blog-large-image.html" class="theme-btn btn-style-one">Blog Yazıları</a>
+                        <a href="{{route('blog')}}" class="theme-btn btn-style-one">Blog Yazıları</a>
                     </div>
                 </div>
             </div>
@@ -292,8 +268,10 @@
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="news-block">
                             <div class="inner-box">
-                                <div class="image-box"><a href="blog-single.html">
-                                        <img src="{{Voyager::image($blog->thumbnail('cropped'))}}" alt=""></a>
+                                <div class="image-box">
+                                    <a href="{{route('blog_detail', ['slug' => $blog->slug])}}">
+                                        <img src="{{Voyager::image($blog->thumbnail('cropped'))}}" alt="">
+                                    </a>
                                 </div>
                                 <div class="lower-content clearfix">
                                     <div class="info">
@@ -302,7 +280,7 @@
                                             <li>{{$blog->created_at->diffForHumans()}}</li>
                                         </ul>
                                     </div>
-                                    <h3><a href="blog-single.html">{{$blog->title}}</a></h3>
+                                    <h3><a href="{{route('blog_detail', ['slug' => $blog->slug])}}">{{$blog->title}}</a></h3>
 
                                     <div class="text">{!! Str::limit($blog->description, 150) !!}</div>
                                     <div class="more-box clearfix">
@@ -310,7 +288,7 @@
                                             <img src="{{Voyager::image($blog->thumbnail('cropped'))}}" alt="{{$blog->title}}"/>
                                             <span class="author-name">Divina Bulls</span>
                                         </div>
-                                        <div class="link-box"><a href="blog-single.html">Devamı</a> <span class="icon icon-aroow-right"></span></div>
+                                        <div class="link-box"><a href="{{route('blog_detail', ['slug' => $blog->slug])}}">Devamı</a> <span class="icon icon-aroow-right"></span></div>
                                     </div>
                                 </div>
                             </div>
