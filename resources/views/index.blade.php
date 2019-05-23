@@ -257,7 +257,7 @@
                                 <figure><a href="{{Voyager::image($work->image)}}" class="ligtbox-image" data-fancybox="gallery"><img src="{{Voyager::image($work->thumbnail('thumb'))}}" alt=""></a></figure>
                                 <div class="title-box">
                                     <h3><a href="projects-single.html">{{$work->title}}</a></h3>
-                                    {{--<span class="tag">Çalışma</span>--}}
+                                    <span class="tag">Detay >></span>
                                 </div>
                             </div>
                         </div>
@@ -278,72 +278,50 @@
             <div class="sec-title">
                 <div class="row">
                     <div class="col-md-4">
-                        <h4>News & Updates</h4>
-                        <h2>Latest From Blog</h2>
-                    </div><!-- /.col-md-4 -->
+                        <h4>Haberler & Bloglar</h4>
+                        <h2>Hidropar Yazıları</h2>
+                    </div>
                     <div class="col-md-5">
-                        <div class="text">Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain.</div><!-- /.text -->
-                    </div><!-- /.col-md-5 -->
+                        <div class="text">Hidropar'ın yayınlamış olduğu duyurular, yazılar ve teknoloji hakkında bir çok makaleye ulaşmak istiyorsanız devam edin. </div>
+                    </div>
                     <div class="col-md-3 text-right">
-                        <a href="blog-large-image.html" class="theme-btn btn-style-one">More News</a>
-                    </div><!-- /.col-md-3 -->
-                </div><!-- /.row -->
-            </div><!-- /.sec-title -->
+                        <a href="blog-large-image.html" class="theme-btn btn-style-one">Blog Yazıları</a>
+                    </div>
+                </div>
+            </div>
 
             <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <!-- News Block -->
-                    <div class="news-block">
-                        <div class="inner-box">
-                            <div class="image-box"><a href="blog-single.html"><img src="images/resource/news-1.jpg" alt=""></a></div>
-                            <div class="lower-content clearfix">
-                                <div class="info">
-                                    <ul>
-                                        <li><a href="#">Construction</a>, </li>
-                                        <li><a href="#">June 06, 2019</a></li>
-                                    </ul>
-                                </div>
-                                <h3><a href="blog-single.html">We are best for any industrial & business solution.</a></h3>
 
-                                <div class="text">Rationally encounter consequences seds ut that are extremely painful and when to do what we like beat circumtances and owing...</div>
-                                <div class="more-box clearfix">
-                                    <div class="author-box">
-                                        <img src="images/testimonials/1.png" alt="Awesome Image"/>
-                                        <span class="author-name">Divina Bulls</span>
-                                    </div><!-- /.author-box -->
-                                    <div class="link-box"><a href="blog-single.html">Read More</a> <span class="icon icon-aroow-right"></span></div>
-                                </div><!-- /.more-box -->
+                @foreach($blogs as $blog)
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="news-block">
+                            <div class="inner-box">
+                                <div class="image-box"><a href="blog-single.html">
+                                        <img src="{{Voyager::image($blog->thumbnail('cropped'))}}" alt=""></a>
+                                </div>
+                                <div class="lower-content clearfix">
+                                    <div class="info">
+                                        <ul>
+                                            <li><a href="#">Blog</a>, </li>
+                                            <li><a href="#">{{$blog->created_at->diffForHumans()}}</a></li>
+                                        </ul>
+                                    </div>
+                                    <h3><a href="blog-single.html">{{$blog->title}}</a></h3>
+
+                                    <div class="text">{!! Str::limit($blog->description, 150) !!}</div>
+                                    <div class="more-box clearfix">
+                                        <div class="author-box">
+                                            <img src="{{Voyager::image($blog->thumbnail('cropped'))}}" alt="{{$blog->title}}"/>
+                                            <span class="author-name">Divina Bulls</span>
+                                        </div>
+                                        <div class="link-box"><a href="blog-single.html">Devamı</a> <span class="icon icon-aroow-right"></span></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div><!-- /.col-md-4 -->
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <!-- News Block -->
-                    <div class="news-block">
-                        <div class="inner-box">
-                            <div class="image-box"><a href="blog-single.html"><img src="images/resource/news-2.jpg" alt=""></a></div>
-                            <div class="lower-content clearfix">
-                                <div class="info">
-                                    <ul>
-                                        <li><a href="#">Manufacturing</a>, </li>
-                                        <li><a href="#">June 06, 2019</a></li>
-                                    </ul>
-                                </div>
-                                <h3><a href="blog-single.html">10 reason why should choose our industry.</a></h3>
+            @endforeach
 
-                                <div class="text">How all this mistaken idea denoncing praising pain was born and we will gives you a completed teachings great explorer the truth... </div>
-                                <div class="more-box clearfix">
-                                    <div class="author-box">
-                                        <img src="images/testimonials/2.png" alt="Awesome Image"/>
-                                        <span class="author-name">Emilio Kemmer</span>
-                                    </div><!-- /.author-box -->
-                                    <div class="link-box"><a href="blog-single.html">Read More</a> <span class="icon icon-aroow-right"></span></div>
-                                </div><!-- /.more-box -->
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- /.col-md-4 -->
-                <!-- /.col-md-4 -->
             </div><!-- /.row -->
         </div>
     </section>

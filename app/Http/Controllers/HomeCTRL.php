@@ -57,6 +57,11 @@
 
         }
 
+        public function corporate_detail($slug)
+        {
+            return $slug;
+        }
+
         public function works()
         {
             SEO::setTitle(trans('seo.titles.works'));
