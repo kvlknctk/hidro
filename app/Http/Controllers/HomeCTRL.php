@@ -47,17 +47,27 @@
 
             $service = Service::whereSlug($slug)->firstOrFail();
 
-            dd($service);
+            //dd($service);
             return view('service', compact('service'));
         }
 
         public function corporate()
         {
 
-
         }
 
         public function corporate_detail($slug)
+        {
+            return $slug;
+        }
+
+
+        public function blog()
+        {
+
+        }
+
+        public function blog_detail($slug)
         {
             return $slug;
         }
