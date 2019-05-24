@@ -86,10 +86,10 @@
                     <div class="services-block">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure><img src="{{Voyager::image($service->thumbnail('thumb'))}}" alt=""></figure>
+                                <figure><img src="{{Voyager::image($service->thumbnail('thumb'))}}" alt="{{$service->title}}"></figure>
                                 <div class="overlay-box">
                                     <div class="btn-box">
-                                        <a href="#"><i class="icon arrow-top-right"></i>Detay</a>
+                                        <a href="{{route('work_detail', ['slug' => $service->slug])}}"><i class="icon arrow-top-right"></i>Detay</a>
                                     </div>
                                 </div>
                                 <div class="title"><h3>{{$service->title}}</h3> <i class="icon flaticon-user-1"></i></div>
@@ -286,7 +286,7 @@
                                     <div class="more-box clearfix">
                                         <div class="author-box">
                                             <img src="{{Voyager::image($blog->thumbnail('cropped'))}}" alt="{{$blog->title}}"/>
-                                            <span class="author-name">Divina Bulls</span>
+                                            {{--<span class="author-name">Divina Bulls</span>--}}
                                         </div>
                                         <div class="link-box"><a href="{{route('blog_detail', ['slug' => $blog->slug])}}">Devamı</a> <span class="icon icon-aroow-right"></span></div>
                                     </div>
