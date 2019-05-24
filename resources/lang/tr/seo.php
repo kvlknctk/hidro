@@ -17,6 +17,7 @@
         'titles' => [
             'home'            => 'Anasayfa',
             'services'        => 'Hizmetler',
+            'corporate'       => 'Corporate',
             'contact'         => 'İletişim',
             'works'           => 'Çalışmalar',
             'products'        => 'Ürünler',
