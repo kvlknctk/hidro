@@ -31,6 +31,11 @@ class AppServiceProvider extends ServiceProvider
            $view->with('corporates', Corporate::get());
         });
 
+        // kurumsal sayfasına içerikleri gönderiyoruz.
+        view()->composer('layout.master_corporate', function($view){
+            $view->with('corporates', Corporate::get());
+        });
+
         view()->composer('index', function($view){
             $view->with('references', Reference::get());
         });
