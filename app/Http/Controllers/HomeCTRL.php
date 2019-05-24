@@ -53,12 +53,19 @@
 
         public function corporate()
         {
+            $corporates = Corporate::all();
+            $corporate = Corporate::whereSlug('hakkimizda')->firstOrFail();
+
+            return view('corporate', compact('corporate'));
 
         }
 
         public function corporate_detail($slug)
         {
-            return $slug;
+
+            $corporate = Corporate::whereSlug($slug)->firstOrFail();
+
+            return view('corporate', compact('corporate'));
         }
 
 
