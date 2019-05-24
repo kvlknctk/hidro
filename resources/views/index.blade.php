@@ -285,7 +285,7 @@
                                     <div class="text">{!! Str::limit($blog->description, 150) !!}</div>
                                     <div class="more-box clearfix">
                                         <div class="author-box">
-                                            <img src="{{Voyager::image($blog->thumbnail('cropped'))}}" alt="{{$blog->title}}"/>
+                                            {{--<img src="{{Voyager::image($blog->thumbnail('cropped'))}}" alt="{{$blog->title}}"/>--}}
                                             {{--<span class="author-name">Divina Bulls</span>--}}
                                         </div>
                                         <div class="link-box"><a href="{{route('blog_detail', ['slug' => $blog->slug])}}">Devamı</a> <span class="icon icon-aroow-right"></span></div>
