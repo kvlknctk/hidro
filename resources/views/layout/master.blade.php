@@ -308,7 +308,7 @@
                     <div class="col-md-4 col-sm-4 col-xs-12">
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12 text-right">
-                        <a href="https://eruzay.com.tr">
+                        <a href="https://eruzay.com.tr" target="_blank">
                             <img src="{{asset('img/eruzay.png')}}" width="85" alt="Eruzay Yazılım">
                         </a>
                     </div>
