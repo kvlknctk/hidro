@@ -2,7 +2,7 @@
 <li class="{{active(['index'], 'current')}}"><a href="{{route('index')}}">Anasayfa</a></li>
 
 
-<li class="{{active(['corporate', 'corporate/*'], 'current')}} dropdown">
+<li class="{{active(['kurumsal', 'kurumsal/*'], 'current')}} dropdown">
     <a href="{{route('corporate')}}">Kurumsal</a>
     <ul>
         @foreach($corporates as $corporate)
