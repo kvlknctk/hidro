@@ -99,34 +99,34 @@
 
                 <div class="form-column col-lg-9 col-md-12 col-sm-12 col-xs-12">
                     <div class="inner-column">
-                        <div class="text">For Business: For Business inquiry fill our feedback form and Troll Free Number - (+91) 00-700-6202, our team will help you with in 24 hours.</div>
+                        <div class="text">İletişim formunu kullanarak bizimle doğrudan iletişime geçebilirsiniz. İhtiyaç görüldüğü takdirde sizinle iletişime geçilecektir. </div>
 
                         <div class="contact-form">
                             <form method="post" action="index-2.html">
                                 <div class="row clearfix">
                                     <div class="column col-md-6 col-sm-6 col-xs-12">
                                         <div class="form-group">
-                                            <input type="text" name="username" value="" placeholder="Your Name" required>
+                                            <input type="text" name="username" value="" placeholder="İsim" required>
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" name="email" value="" placeholder="Email Address" required>
+                                            <input type="email" name="email" value="" placeholder="E-Posta " required>
                                         </div>
                                         <div class="form-group">
                                             <select class="custom-select-box">
-                                                <option>Select Service</option>
-                                                <option>Select Service</option>
-                                                <option>Select Service</option>
-                                                <option>Select Service</option>
+                                                <option>Servis 1</option>
+                                                <option>Servis 2</option>
+                                                <option>Servis 3</option>
+                                                <option>Servis 4</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="column col-md-6 col-sm-6 col-xs-12">
                                         <div class="form-group">
-                                            <textarea name="message" placeholder="Massage"></textarea>
+                                            <textarea name="message" placeholder="Mesajınız"></textarea>
                                         </div>
 
                                         <div class="form-group">
-                                            <button type="submit" class="theme-btn">Submit Now</button>
+                                            <button type="submit" class="theme-btn">Ekle</button>
                                         </div>
                                     </div>
                                 </div>
