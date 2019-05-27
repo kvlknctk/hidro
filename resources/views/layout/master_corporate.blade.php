@@ -9,7 +9,6 @@
                 <li><a href="{{route('index')}}">{{trans('seo.titles.home')}}</a></li>
                 <li>{{trans('seo.titles.corporate')}}</li>
             </ul>
-            <br>
         </div>
     </section>
 
