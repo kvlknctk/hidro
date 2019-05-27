@@ -13,7 +13,7 @@
                     {!! $corporate->description !!}
                 </div>
 
-                <div class="two-column">
+                {{--<div class="two-column">
                     <div class="row clearfix">
                         <div class="image-column col-lg-7 col-md-12 col-sm-12 col-xs-12">
                             <div class="image-box"><a href="images/resource/image-3.jpg" data-fancybox="gallery"><img src="{{asset('images/resource/image-3.jpg')}}" alt=""></a></div>
@@ -50,7 +50,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--}}
 
 
 
