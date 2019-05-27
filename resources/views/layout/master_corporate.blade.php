@@ -36,7 +36,7 @@
                                 <div class="link-box">
                                     <span class="icon fa fa-file-o"></span>
                                     <h5>{{$file->name}}</h5>
-                                    <a href="{{ Voyager::image(json_decode($file->file)[0]->download_link) }}">İndir >></a>
+                                    <a href="{{ Voyager::image(json_decode($file->file)[0]->download_link) }}">İndir </a>
                                 </div>
                             @endforeach
                         </div>
