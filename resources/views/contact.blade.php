@@ -3,7 +3,6 @@
 
 
 @section('content')
-    <!--Page Title-->
     <section class="page-title" style="background-image:url({{asset('img/breadcumbs/iletisim.jpg')}})">
         <div class="auto-container">
             <h1>{{trans('seo.titles.contact')}}</h1>
@@ -13,9 +12,7 @@
             </ul>
         </div>
     </section>
-    <!--End Page Title-->
 
-    <!-- Contact Section three -->
     <section class="contact-section-three">
         <div class="auto-container">
             <div class="row clearfix">
@@ -56,14 +53,12 @@
                     </div>
                 </div>
 
-                <!-- Form Column -->
                 <div class="form-column col-md-8 col-sm-12 col-xs-12">
                     <div class="inner-column">
                         <div class="sec-title">
                             <h2>Bize Mesaj Yazın</h2>
                             <div class="text">Görüşlerinizi ya da firmamıza sormanız gereken soruları aşağıdaki formu kullanarak gönderebilirsiniz. Gerekli görüldüğü takdirde anında geridönüş yapılacaktır. </div>
                         </div>
-                        <!--Contact Form-->
                         <div class="contact-form style-three">
                             <form method="post" action="sendemail.php" id="contact-form">
                                 <div class="row clearfix">
@@ -102,9 +97,7 @@
             </div>
         </div>
     </section>
-    <!--End Contact Section three -->
 
-    <!-- Contact Map Section -->
     <section class="contact-map-section">
         <div class="map-outer">
             <!--Map Canvas-->
@@ -120,13 +113,11 @@
             </div>
         </div>
     </section>
-    <!-- End Contact Map Section -->
 
 @endsection
 
 
 @push('scripts')
-    <!--Google Map APi Key-->
     <script src="http://maps.google.com/maps/api/js?key=AIzaSyDTPlX-43R1TpcQUyWjFgiSfL_BiGxslZU"></script>
     <script src="{{asset('js/map-script.js')}}"></script>
 
