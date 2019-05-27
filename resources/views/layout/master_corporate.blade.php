@@ -2,7 +2,7 @@
 
 
 @section('content')
-    <section class="page-title" style="background-image:url(images/background/2.jpg)">
+    <section class="page-title" style="background-image:url({{asset('img/breadcumbs/kurumsal.jpg')}})">
         <div class="auto-container">
             <h1>{{trans('seo.titles.corporate')}}</h1>
             <ul class="page-breadcrumb">
