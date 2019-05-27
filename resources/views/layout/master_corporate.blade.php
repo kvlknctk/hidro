@@ -2,7 +2,6 @@
 
 
 @section('content')
-    <!--Page Title-->
     <section class="page-title" style="background-image:url(images/background/2.jpg)">
         <div class="auto-container">
             <h1>{{trans('seo.titles.corporate')}}</h1>
@@ -13,19 +12,15 @@
             <br>
         </div>
     </section>
-    <!--End Page Title-->
 
     <div class="sidebar-page-container">
         <div class="auto-container">
             <div class="row clearfix">
-                <!--Content Side / Our Blog-->
                 @yield('corporate_master')
 
-                <!--Sidebar Side-->
                 <div class="sidebar-side col-lg-3 col-md-3 col-sm-12 col-xs-12">
                     <aside class="sidebar">
 
-                        <!--Blog Category Widget-->
                         <div class="sidebar-widget sidebar-blog-category">
                             <ul class="services-cat">
                                 @foreach($corporates as $corporate)
@@ -35,7 +30,6 @@
                             </ul>
                         </div>
 
-                        <!--Brochure-->
                         <div class="sidebar-widget brochure-widget">
                             <h3>Our Brochures</h3>
                             <div class="link-box">
@@ -50,7 +44,6 @@
                             </div>
                         </div>
 
-                        <!--Contact Widhet-->
                         <div class="sidebar-widget testimonials-widget">
                             <h3>Testimonials</h3>
                             <div class="testimonial-carousel owl-carousel owl-theme">
@@ -79,9 +72,7 @@
             </div>
         </div>
     </div>
-    <!-- End Sidebar Page Container -->
 
-    <!-- Contact Section -->
     <section class="contact-section style-two">
         <div class="auto-container">
             <div class="row clearfix">
