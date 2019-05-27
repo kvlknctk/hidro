@@ -44,28 +44,25 @@
                             </div>
                         </div>
 
-                        <div class="sidebar-widget testimonials-widget">
-                            <h3>Testimonials</h3>
-                            <div class="testimonial-carousel owl-carousel owl-theme">
-                                <div class="testimonial-block-three">
-                                    <div class="info">
-                                        <div class="thumb"><img src="{{asset('images/resource/thumb-12.jpg')}}" alt=""></div>
-                                        <h5 class="name">Teena Venanda</h5>
-                                        <span class="city">Newyork</span>
-                                    </div>
-                                    <div class="text">Must explain too you how that mistaken idea denoncing sed all pleasure & praising pain was and will give all actual human .</div>
-                                </div>
+                        @if(count($testimonials) > 0)
+                            <div class="sidebar-widget testimonials-widget">
+                                <h3>Müşteri Yorumları</h3>
+                                <div class="testimonial-carousel owl-carousel owl-theme">
 
-                                <div class="testimonial-block-three">
-                                    <div class="info">
-                                        <div class="thumb"><img src="{{asset('images/resource/thumb-12.jpg')}}" alt=""></div>
-                                        <h5 class="name">Teena Venanda</h5>
-                                        <span class="city">Newyork</span>
-                                    </div>
-                                    <div class="text">Must explain too you how that mistaken idea denoncing sed all pleasure & praising pain was and will give all actual human .</div>
+                                    @foreach($testimonials as $testimonial)
+                                        <div class="testimonial-block-three">
+                                            <div class="info">
+                                                <div class="thumb"><img src="{{Voyager::image($testimonial->logo)}}" alt=""></div>
+                                                <h5 class="name">{{$testimonial->name}}</h5>
+                                                <span class="city">{{$testimonial->city}}</span>
+                                            </div>
+                                            <div class="text">{{$testimonial->testimonial}}</div>
+                                        </div>
+                                    @endforeach
+
                                 </div>
                             </div>
-                        </div>
+                        @endif
 
                     </aside>
                 </div>

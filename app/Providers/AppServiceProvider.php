@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\Corporate;
 use App\Link;
 use App\Reference;
+use App\Testimonial;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -34,6 +35,7 @@ class AppServiceProvider extends ServiceProvider
         // kurumsal sayfasına içerikleri gönderiyoruz.
         view()->composer('layout.master_corporate', function($view){
             $view->with('corporates', Corporate::get());
+            $view->with('testimonials', Testimonial::get());
         });
 
         view()->composer('index', function($view){
