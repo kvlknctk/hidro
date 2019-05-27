@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Corporate;
+use App\File;
 use App\Link;
 use App\Reference;
 use App\Testimonial;
@@ -36,6 +37,7 @@ class AppServiceProvider extends ServiceProvider
         view()->composer('layout.master_corporate', function($view){
             $view->with('corporates', Corporate::get());
             $view->with('testimonials', Testimonial::get());
+            $view->with('files', File::get());
         });
 
         view()->composer('index', function($view){

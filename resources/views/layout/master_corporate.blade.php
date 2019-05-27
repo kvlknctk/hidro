@@ -31,17 +31,14 @@
                         </div>
 
                         <div class="sidebar-widget brochure-widget">
-                            <h3>Our Brochures</h3>
-                            <div class="link-box">
-                                <span class="icon fa fa-file-pdf-o"></span>
-                                <h5>Service Overview</h5>
-                                <a href="#">Download.pdf</a>
-                            </div>
-                            <div class="link-box">
-                                <span class="icon fa fa-file-word-o"></span>
-                                <h5>About Our Company</h5>
-                                <a href="#">Download.txt</a>
-                            </div>
+                            <h3>Sabit Dosyalar</h3>
+                            @foreach($files as $file)
+                                <div class="link-box">
+                                    <span class="icon fa fa-file-o"></span>
+                                    <h5>{{$file->name}}</h5>
+                                    <a href="{{ Voyager::image(json_decode($file->file)[0]->download_link) }}">İndir >></a>
+                                </div>
+                            @endforeach
                         </div>
 
                         @if(count($testimonials) > 0)
