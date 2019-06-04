@@ -4,10 +4,14 @@
 @section('content')
     <section class="page-title" style="background-image:url({{asset('img/breadcumbs/kurumsal.jpg')}})">
         <div class="auto-container">
-            <h1>{{trans('seo.titles.corporate')}}</h1>
+            <h1>{{SEOMeta::getTitleSession()}}</h1>
             <ul class="page-breadcrumb">
                 <li><a href="{{route('index')}}">{{trans('seo.titles.home')}}</a></li>
                 <li>{{trans('seo.titles.corporate')}}</li>
+
+                @if(is_active(['kurumsal/*']))
+                    <li>{{SEOMeta::getTitleSession()}}</li>
+                @endif
             </ul>
         </div>
     </section>
@@ -23,7 +27,7 @@
                         <div class="sidebar-widget sidebar-blog-category">
                             <ul class="services-cat">
                                 @foreach($corporates as $corporate)
-                                    <li><a href="{{route('corporate_detail', ['slug' => $corporate->slug])}}">{{$corporate->title}}</a></li>
+                                    <li class="{{active(['kurumsal/'.$corporate->slug], 'active')}}"><a href="{{route('corporate_detail', ['slug' => $corporate->slug])}}">{{$corporate->title}}</a></li>
                                 @endforeach
 
                             </ul>

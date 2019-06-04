@@ -53,6 +53,10 @@
 
         public function corporate()
         {
+
+            SEO::setTitle(trans('seo.titles.corporate'));
+            SEO::setDescription(trans('seo.descriptions.corporate'));
+
             $corporates = Corporate::all();
             $corporate = Corporate::whereSlug('hakkimizda')->firstOrFail();
 
@@ -62,8 +66,11 @@
 
         public function corporate_detail($slug)
         {
-
             $corporate = Corporate::whereSlug($slug)->firstOrFail();
+
+
+            SEO::setTitle($corporate->title);
+            SEO::setDescription(trans('seo.descriptions.corporate'));
 
             return view('corporate', compact('corporate'));
         }
