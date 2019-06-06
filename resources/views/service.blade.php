@@ -3,7 +3,6 @@
 
 
 @section('content')
-    <!--Page Title-->
     <section class="page-title" style="background-image:url({{asset('img/breadcumbs/hizmetler.jpg')}})">
         <div class="auto-container">
             <h1>{{trans('seo.titles.services')}}</h1>
@@ -13,7 +12,6 @@
             </ul>
         </div>
     </section>
-    <!--End Page Title-->
 
     <section class="services-page-section">
         <div class="auto-container">
@@ -24,7 +22,7 @@
             <div class="row clearfix">
 
                 @foreach($services as $service)
-                    <!-- Services Block -->
+
                         <div class="services-block col-md-6 col-sm-6 col-xs-12">
                             <div class="inner-box">
                                 <div class="image-box">
