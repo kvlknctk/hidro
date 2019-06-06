@@ -13,7 +13,7 @@
 
 
 
-<li class="{{active(['services'], 'current')}}"><a href="{{route('services')}}">Ürünler</a></li>
+<li class="{{active(['urunler'], 'current')}}"><a href="{{route('products')}}">Ürünler</a></li>
 <li class="{{active(['services'], 'current')}}"><a href="{{route('services')}}">Hizmetler</a></li>
-<li class="{{active(['services'], 'current')}}"><a href="{{route('services')}}">Çalışmalar</a></li>
+<li class="{{active(['calisma'], 'current')}}"><a href="{{route('works')}}">Çalışmalar</a></li>
 <li class="{{active(['iletisim'], 'current')}}"><a href="{{route('contact')}}">İletişim</a></li>
