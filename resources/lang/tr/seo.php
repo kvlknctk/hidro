@@ -23,6 +23,13 @@
             'works'           => 'Çalışmalar',
             'products'        => 'Ürünler',
             'human_resources' => 'İnsan Kaynakları '
+        ],
+
+
+        'products' => [
+            'category' => 'Kategori',
+            'date'     => 'Tarih',
+            'client'   => 'Müşteri'
         ]
 
     ];

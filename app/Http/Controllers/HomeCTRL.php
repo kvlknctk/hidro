@@ -10,6 +10,7 @@
     use App\Work;
     use Illuminate\Http\Request;
     use SEO;
+    use Illuminate\Support\Str;
 
     class HomeCTRL extends Controller
     {
@@ -42,13 +43,15 @@
 
         public function service_detail($slug)
         {
-            SEO::setTitle('Servis detayı başlığı burada yer alacak. ');
-            SEO::setDescription('Servis detayları hakkında açıklama burada yer alacak. ');
-
             $service = Service::whereSlug($slug)->firstOrFail();
 
+
+            SEO::setTitle($service->title);
+            SEO::setDescription(Str::limit($service->description, 150));
+
+
             //dd($service);
-            return view('service', compact('service'));
+            return view('service_detail', compact('service'));
         }
 
         public function corporate()
