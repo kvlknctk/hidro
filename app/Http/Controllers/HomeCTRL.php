@@ -91,8 +91,11 @@
 
         public function works()
         {
+            $works = Work::paginate(10);
             SEO::setTitle(trans('seo.titles.works'));
             SEO::setDescription(trans('seo.descriptions.works'));
+
+            return view('works', compact('works'));
         }
 
         public function work_detail($slug)
