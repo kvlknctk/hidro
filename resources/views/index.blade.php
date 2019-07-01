@@ -257,7 +257,7 @@
                         <div class="text">Hidropar'ın yayınlamış olduğu duyurular, yazılar ve teknoloji hakkında bir çok makaleye ulaşmak istiyorsanız devam edin. </div>
                     </div>
                     <div class="col-md-3 text-right">
-                        <a href="{{route('blog')}}" class="theme-btn btn-style-one">Blog Yazıları</a>
+                        <a href="{{route('blogs')}}" class="theme-btn btn-style-one">Blog Yazıları</a>
                     </div>
                 </div>
             </div>
@@ -276,7 +276,7 @@
                                 <div class="lower-content clearfix">
                                     <div class="info">
                                         <ul>
-                                            <li><a href="{{route('blog')}}">Blog</a>, </li>
+                                            <li><a href="{{route('blogs')}}">Blog</a>, </li>
                                             <li>{{$blog->created_at->diffForHumans()}}</li>
                                         </ul>
                                     </div>
