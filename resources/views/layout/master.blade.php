@@ -79,7 +79,7 @@
                 <div class="clearfix">
 
                     <div class="pull-left logo-outer">
-                        <div class="logo"><a href="{{route('index')}}"><img src="{{asset('img/hidropar_logo.png')}}" alt="" title=""></a></div>
+                        <div class="logo"><a href="{{route('index')}}"><img src="{{asset('img/hidropar_logo.svg')}}" width="240" alt="" title=""></a></div>
                     </div>
 
                     <div class="pull-right upper-right clearfix">
@@ -184,7 +184,7 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo pull-left">
-                    <a href="{{route('index')}}" class="img-responsive"><img src="{{asset('images/logo-small.png')}}" alt="" title=""></a>
+                    <a href="{{route('index')}}" class="img-responsive"><img src="{{asset('img/hidropar_logo.svg')}}" width="175" alt="" title=""></a>
                 </div>
                 <!--Right Col-->
                 <div class="right-col pull-right">
@@ -224,7 +224,7 @@
                 <div class="row clearfix">
                     <!--Kurumsal Footer Kolunu-->
                     <div class="footer-column col-md-4 col-sm-6 col-xs-12">
-                        <div class="logo"><a href="{{route('index')}}"><img src="{{asset('img/hidropar_footer_logo.png')}}" alt="Hidropar Footer Logo"></a></div>
+                        <div class="logo"><a href="{{route('index')}}"><img src="{{asset('img/hidropar_logo_beyaz.svg')}}" width="240" alt="Hidropar Footer Logo"></a></div>
                         <div class="footer-widget subscribe-widget">
                             <div class="widget-content">
                                 <div class="text">
