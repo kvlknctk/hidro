@@ -217,7 +217,7 @@
     </section>
 
     <!-- Çalışmalar Bölümü  -->
-    <section class="project-section" style="background-image: url({{asset('images/background/1.jpg')}});">
+    <section class="project-section" style="background-image: url({{asset('img/poligon-1.jpg')}});">
         <div class="auto-container">
             <div class="sec-title light text-center">
                 <h4>{{setting('site.company_name')}}</h4>
