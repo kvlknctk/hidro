@@ -20,7 +20,7 @@ Route::get('/blog', ['as' => 'blog', 'uses' => 'HomeCTRL@blog']);
 Route::get('/blog/{slug}', ['as' => 'blog_detail', 'uses' => 'HomeCTRL@blog_detail']);
 
 Route::get('/calisma', ['as' => 'works', 'uses' => 'HomeCTRL@works']);
-Route::get('/calisma/{slug}', ['as' => 'work_detail', 'uses' => 'HomeCTRL@works_detail']);
+Route::get('/calisma/{slug}', ['as' => 'work_detail', 'uses' => 'HomeCTRL@work_detail']);
 
 Route::get('/urunler', ['as' => 'products', 'uses' => 'HomeCTRL@products']);
 Route::get('/urunler/{slug}', ['as' => 'product_detail', 'uses' => 'HomeCTRL@product_detail']);

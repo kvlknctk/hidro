@@ -89,7 +89,7 @@
                                 <figure><img src="{{Voyager::image($service->thumbnail('thumb'))}}" alt="{{$service->title}}"></figure>
                                 <div class="overlay-box">
                                     <div class="btn-box">
-                                        <a href="{{route('work_detail', ['slug' => $service->slug])}}"><i class="icon arrow-top-right"></i>Detay</a>
+                                        <a href="{{route('service_detail', ['slug' => $service->slug])}}"><i class="icon arrow-top-right"></i>Detay</a>
                                     </div>
                                 </div>
                                 <div class="title"><h3>{{$service->title}}</h3> <i class="icon flaticon-user-1"></i></div>

@@ -97,10 +97,12 @@
 
         public function work_detail($slug)
         {
-            SEO::setTitle('Çalışma detayları burada yer alacak. ');
-            SEO::setDescription('Çalışma burada yer alacak. ');
+            $work = Work::whereSlug($slug)->firstOrFail();
 
-            return $slug;
+            SEO::setTitle($work->title);
+            SEO::setDescription($work->description);
+
+            return view('work_detail', compact('work'));
 
         }
 
