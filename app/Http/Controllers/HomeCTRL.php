@@ -79,9 +79,12 @@
         }
 
 
-        public function blog()
+        public function blogs()
         {
 
+            $blogs = Blog::get();
+
+            return view('blogs', compact('blogs'));
         }
 
         public function blog_detail($slug)
