@@ -91,7 +91,13 @@
 
         public function blog_detail($slug)
         {
-            return $slug;
+            $blog = Blog::whereSlug($slug)->firstOrFail();
+            $blogs = Blog::limit(5)->get();
+
+            SEO::setTitle($blog->title);
+            SEO::setDescription($blog->description);
+
+            return view('blog_detail', compact('blog', 'blogs'));
         }
 
         public function works()

@@ -46,7 +46,7 @@
 
             </div>
 
-            <!-- Styled Pagination -->
+            {{-- TODO: Kapatılan paginate.
             <div class="styled-pagination text-center">
                 <ul class="clearfix">
                     <li class="prev"><a href="#"><i class="fa fa-chevron-left"></i></a></li>
@@ -55,6 +55,8 @@
                     <li class="next"><a href="#"><i class="fa fa-chevron-right"></i></a></li>
                 </ul>
             </div>
+            --}}
+
         </div>
     </section>
 
