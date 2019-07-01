@@ -81,6 +81,8 @@
 
         public function blogs()
         {
+            SEO::setTitle(trans('seo.titles.blogs'));
+            SEO::setDescription(trans('seo.descriptions.blogs'));
 
             $blogs = Blog::get();
 

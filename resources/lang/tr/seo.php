@@ -11,6 +11,7 @@
             'works'           => 'Hidropar Eskişehir Firmasının daha önceden yapmış olduğu çalışmalara sayfamızdan ulaşabilirsiniz.',
             'products'        => 'Firmamız tarafından satışa sürülen ürünlerin tamamına ulaşabilir, fiyat bilgisi ve teklif alabilirsiniz.',
             'human_resources' => 'Hidropar Eskişehir firmasının büyük bir kısmını deneyimli personellerimiz yönetiyor... Siz de eğer bizimle çalışmak isterseniz lütfen CVnizi gönderebilirsiniz. ',
+            'blogs'           => 'Hidropar Eskişehir firmasının yayınlamış olduğu haber ve blog yazılarına ulaşabilir, güncel gelişmeler hakkında bilgi edinebilirsiniz. '
 
         ],
 
@@ -21,6 +22,7 @@
             'corporate'       => 'Kurumsal',
             'contact'         => 'İletişim',
             'works'           => 'Çalışmalar',
+            'blogs'           => 'Blog',
             'products'        => 'Ürünler',
             'human_resources' => 'İnsan Kaynakları '
         ],
