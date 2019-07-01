@@ -184,7 +184,7 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo pull-left">
-                    <a href="{{route('index')}}" class="img-responsive"><img src="{{asset('img/hidropar_logo.svg')}}" width="175" alt="" title=""></a>
+                    <a href="{{route('index')}}" class="img-responsive"><img src="{{asset('img/hidropar_logo.svg')}}" width="160" alt="" title=""></a>
                 </div>
                 <!--Right Col-->
                 <div class="right-col pull-right">
