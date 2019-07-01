@@ -12,7 +12,6 @@
 */
 
 Route::get('/', ['as' => 'index', 'uses' => 'HomeCTRL@index']);
-Route::get('/iletisim', ['as' => 'contact', 'uses' => 'HomeCTRL@contact']);
 Route::get('/hizmetler', ['as' => 'services', 'uses' => 'HomeCTRL@services']);
 Route::get('/hizmetler/{slug}', ['as' => 'service_detail', 'uses' => 'HomeCTRL@service_detail']);
 
@@ -28,6 +27,8 @@ Route::get('/urunler/{slug}', ['as' => 'product_detail', 'uses' => 'HomeCTRL@pro
 Route::get('/kurumsal', ['as' => 'corporate', 'uses' => 'HomeCTRL@corporate']);
 Route::get('/kurumsal/{slug}', ['as' => 'corporate_detail', 'uses' => 'HomeCTRL@corporate_detail']);
 
+Route::get('/iletisim', ['as' => 'contact', 'uses' => 'HomeCTRL@contact']);
+Route::post('/iletisim', ['as' => 'contact_post', 'uses' => 'HomeCTRL@contact_post']);
 
 
 Route::group(['prefix' => 'admin'], function () {

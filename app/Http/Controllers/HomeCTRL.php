@@ -5,11 +5,13 @@
     use App\Announcement;
     use App\Blog;
     use App\Corporate;
+    use App\Mail\Iletisim;
     use App\Service;
     use App\Slider;
     use App\Work;
     use Illuminate\Http\Request;
     use SEO;
+    use Illuminate\Support\Facades\Mail;
     use Illuminate\Support\Str;
 
     class HomeCTRL extends Controller
@@ -143,5 +145,14 @@
             SEO::setDescription(trans('seo.descriptions.contact'));
 
             return view('contact');
+        }
+
+        public function contact_post(Request $request)
+        {
+            Mail::to(setting('iletisim.mail'))->send(new Iletisim($request));
+
+            return view('success')
+                ->with('title', 'Form Gönderildi')
+                ->with('message', 'İletişim bilgileriniz başarıyla gönderildi. ');
         }
     }

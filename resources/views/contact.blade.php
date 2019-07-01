@@ -60,7 +60,8 @@
                             <div class="text">Görüşlerinizi ya da firmamıza sormanız gereken soruları aşağıdaki formu kullanarak gönderebilirsiniz. Gerekli görüldüğü takdirde anında geridönüş yapılacaktır. </div>
                         </div>
                         <div class="contact-form style-three">
-                            <form method="post" action="sendemail.php" id="contact-form">
+                            <form method="post" action="{{route('contact_post')}}" >
+                                @csrf
                                 <div class="row clearfix">
                                     <div class="left-column col-md-6 col-sm-6 col-xs-12">
                                         <div class="form-group">
@@ -74,8 +75,8 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label>Konu</label>
-                                            <input type="text" name="subject" value="" placeholder="Konu" required>
+                                            <label>GSM</label>
+                                            <input type="text" name="gsm" value="" placeholder="GSM" required>
                                         </div>
                                     </div>
                                     <div class="column col-md-6 col-sm-6 col-xs-12">
