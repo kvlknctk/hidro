@@ -230,8 +230,7 @@
                                 <div class="text">
                                     {{--<h4>Let’s join & create something together</h4>--}}
                                     <p>
-                                        Lorem ipsum dolor sit amet. Deneme olması gereken yazılar bir şekilde burada yer alacak.
-                                        Lorem ipsum dolor sit amet. Deneme olması gereken yazılar bir şekilde burada yer alacak.
+                                        {{setting('sabit-yazilar.hakkimizda')}}
                                     </p>
                                     <form class="subscribe-form" method="post">
                                         @csrf
