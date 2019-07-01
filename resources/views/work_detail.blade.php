@@ -42,12 +42,12 @@
                             <div class="text">
                                 {!! $work->description !!}
                             </div>
-                            <ul class="social-icon-one">
+                            {{--<ul class="social-icon-one">
                                 <li><a href="#"><span class="fa fa-facebook"></span></a></li>
                                 <li><a href="#"><span class="fa fa-twitter"></span></a></li>
                                 <li><a href="#"><span class="fa fa-youtube"></span></a></li>
                                 <li><a href="#"><span class="fa fa-instagram"></span></a></li>
-                            </ul>
+                            </ul>--}}
                         </div>
                     </div>
 
