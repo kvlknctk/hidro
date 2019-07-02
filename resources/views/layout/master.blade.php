@@ -232,11 +232,8 @@
                                     <p>
                                         {{setting('sabit-yazilar.hakkimizda')}}
                                     </p>
-                                    <form class="subscribe-form" method="post">
-                                        @csrf
-                                        <input type="text" name="email" placeholder="E-Posta Listemize Katılın">
-                                        <button type="submit"><i class="machinery-icon-next"></i>Listeye Ekle </button>
-                                    </form>
+
+
                                 </div>
                             </div>
                         </div>
