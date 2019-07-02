@@ -160,7 +160,13 @@
             SEO::setTitle($product->title);
             SEO::setDescription($product->description);
 
-            return view('product_detail', compact('product'));
+
+            $related = Product::with('category')
+                ->where('title', 'LIKE', '%' . $product->title . '%')
+                ->limit(3)->get();
+
+
+            return view('product_detail', compact('product', 'related'));
 
         }
 
