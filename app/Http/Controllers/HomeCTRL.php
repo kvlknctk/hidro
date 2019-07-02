@@ -180,6 +180,12 @@
         }
 
 
+        public function search_post(Request $request)
+        {
+            return $request->all();
+        }
+
+
         public function contact()
         {
             SEO::setTitle(trans('seo.titles.contact'));
