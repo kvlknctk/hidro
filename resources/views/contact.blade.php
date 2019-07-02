@@ -118,7 +118,7 @@
 
 
 @push('scripts')
-    <script src="http://maps.google.com/maps/api/js?key=AIzaSyDTPlX-43R1TpcQUyWjFgiSfL_BiGxslZU"></script>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyCj7YdcrPpAro1x0fxNEf5f2X_c7ZywrGc"></script>
     <script src="{{asset('js/map-script.js')}}"></script>
 
 @endpush
