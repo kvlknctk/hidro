@@ -31,6 +31,8 @@ Route::get('/kurumsal/{slug}', ['as' => 'corporate_detail', 'uses' => 'HomeCTRL@
 Route::get('/iletisim', ['as' => 'contact', 'uses' => 'HomeCTRL@contact']);
 Route::post('/iletisim', ['as' => 'contact_post', 'uses' => 'HomeCTRL@contact_post']);
 
+Route::post('/arama', ['as' => 'search_post', 'uses' => 'HomeCTRL@search_post']);
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
