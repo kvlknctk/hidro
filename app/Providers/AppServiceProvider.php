@@ -45,7 +45,7 @@ class AppServiceProvider extends ServiceProvider
         view()->composer('index', function($view){
             $view->with('references', Reference::get());
         });
-        view()->composer(['products', 'products/*'], function($view){
+        view()->composer(['products', 'products/*', 'product_detail'], function($view){
             $view->with('categories', Category::get());
             $view->with('popular', Product::popularLast(100)->limit(6)->get());
         });
