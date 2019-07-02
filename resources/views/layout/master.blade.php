@@ -64,7 +64,7 @@
                             <ul class="dropdown-menu style-one" aria-labelledby="dropdownMenu1">
                                 <li><a href="#">Servis Destek Talebi</a></li>
                                 <li><a href="#">İnsan Kaynakları </a></li>
-                                <li><a href="#">İletişim</a></li>
+                                <li><a href="{{route('contact')}}">İletişim</a></li>
                             </ul>
                         </div>
                     </div>
