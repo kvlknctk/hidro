@@ -102,14 +102,14 @@
     <section class="contact-map-section">
         <div class="map-outer">
             <div class="map-canvas"
-                 data-zoom="12"
-                 data-lat="-37.817085"
-                 data-lng="144.955631"
+                 data-zoom="18"
+                 data-lat="{{setting('iletisim.lat')}}"
+                 data-lng="{{setting('iletisim.lng')}}"
                  data-type="roadmap"
                  data-hue="#ffc400"
                  data-title="Tam Buradayız"
                  data-icon-path="images/icons/map-marker-2.png"
-                 data-content="{{setting('iletisim.adres')}}<br><a href='mailto:{{setting('iletisim.mail')}}'>{{setting('iletisim.mail')}}</a>">
+                 data-content="{{setting('iletisim.adres')}}<br><a href='{{setting('iletisim.navigasyon')}}' target='_blank'>Navigasyonda İncele</a>">
             </div>
         </div>
     </section>
