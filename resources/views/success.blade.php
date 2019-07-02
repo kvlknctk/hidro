@@ -1,7 +1,5 @@
 @extends('layout.master')
 
-
-
 @section('content')
     <section class="page-title" style="background-image:url({{asset('img/breadcumbs/iletisim.jpg')}})">
         <div class="auto-container">
@@ -20,14 +18,8 @@
                     <h3>{{$title}}</h3>
                     <p>{{$message}}</p>
                 </div>
-
-
-
             </div>
         </div>
     </section>
-
-
-
 
 @endsection

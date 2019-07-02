@@ -73,7 +73,6 @@
             </div>
         </div>
 
-        <!--Header-Upper-->
         <div class="header-upper">
             <div class="auto-container">
                 <div class="clearfix">
@@ -84,7 +83,6 @@
 
                     <div class="pull-right upper-right clearfix">
 
-                        <!--Info Box-->
                         <div class="upper-column info-box">
                             <div class="icon-box"><span class="machinery-icon-map"></span></div>
                             <ul>
@@ -93,7 +91,6 @@
                             </ul>
                         </div>
 
-                        <!--Info Box-->
                         <div class="upper-column info-box">
                             <div class="icon-box"><span class="machinery-icon-contact"></span></div>
                             <ul>
@@ -124,17 +121,13 @@
                 </div>
             </div>
         </div>
-        <!--End Header Upper-->
 
-        <!--Header Lower-->
         <div class="header-lower">
 
             <div class="auto-container">
                 <div class="nav-outer clearfix">
-                    <!-- Main Menu -->
                     <nav class="main-menu">
                         <div class="navbar-header">
-                            <!-- Toggle Button -->
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
@@ -149,7 +142,6 @@
                         </div>
                     </nav>
 
-                    <!--Search Box-->
                     <div class="search-box">
                         <div class="dropdown dropdown-outer">
 
@@ -171,28 +163,21 @@
                     </div>
 
 
-                    <!-- Outer Box-->
                     <div class="outer-box">
                         <div class="link-box"><a href="{{route('contact')}}" class="theme-btn btn-style-one">Ulaşım</a></div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--End Header Lower-->
 
-        <!--Sticky Header-->
         <div class="sticky-header">
             <div class="auto-container clearfix">
-                <!--Logo-->
                 <div class="logo pull-left">
                     <a href="{{route('index')}}" class="img-responsive"><img src="{{asset('img/hidropar_logo.svg')}}" width="160" alt="" title=""></a>
                 </div>
-                <!--Right Col-->
                 <div class="right-col pull-right">
-                    <!-- Main Menu -->
                     <nav class="main-menu">
                         <div class="navbar-header">
-                            <!-- Toggle Button -->
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
@@ -207,23 +192,18 @@
 
                             </ul>
                         </div>
-                    </nav><!-- Main Menu End-->
+                    </nav>
                 </div>
             </div>
         </div>
-        <!--End Sticky Header-->
     </header>
-    <!--End Main Header -->
 
     @yield('content')
 
-    <!-- Main Footer -->
     <footer class="main-footer padding-top">
         <div class="auto-container">
-            <!--Widgets Section-->
             <div class="widgets-section">
                 <div class="row clearfix">
-                    <!--Kurumsal Footer Kolunu-->
                     <div class="footer-column col-md-4 col-sm-6 col-xs-12">
                         <div class="logo"><a href="{{route('index')}}"><img src="{{asset('img/hidropar_logo_beyaz.svg')}}" width="240" alt="Hidropar Footer Logo"></a></div>
                         <div class="footer-widget subscribe-widget">

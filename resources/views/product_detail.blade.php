@@ -22,13 +22,10 @@
         <div class="auto-container">
             <div class="row clearfix">
 
-                <!--Content Side-->
                 <div class="content-side pull-right col-lg-9 col-md-8 col-sm-12 col-xs-12">
-                    <!--Shop Single-->
                     <div class="shop-single">
                         <div class="product-details">
 
-                            <!--Basic Details-->
                             <div class="basic-details">
                                 <div class="row clearfix">
                                     <div class="image-column col-md-6 col-sm-6 col-xs-12">
@@ -63,30 +60,23 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--Basic Details-->
 
-                            <!--Product Info Tabs-->
                             <div class="product-info-tabs">
-                                <!--Product Tabs-->
                                 <div class="prod-tabs tabs-box">
 
-                                    <!--Tab Btns-->
                                     <ul class="tab-btns tab-buttons clearfix">
                                         <li data-tab="#prod-details" class="tab-btn active-btn">Açıklama</li>
                                         {{--<li data-tab="#prod-reviews" class="tab-btn ">Reviews (2)</li>--}}
                                     </ul>
 
-                                    <!--Tabs Container-->
                                     <div class="tabs-content">
 
-                                        <!--Tab -->
                                         <div class="tab active-tab" id="prod-details">
                                             <div class="content">
                                                 {!! $product->description !!}
                                             </div>
                                         </div>
 
-                                        <!--Tab / Active Tab-->
                                         {{--<div class="tab active-tab" id="prod-reviews">
                                             <h2 class="title">2 Reviews For win Your Friends</h2>
                                             <!--Reviews Container-->
@@ -198,9 +188,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--End Product Info Tabs-->
 
-                            <!--Related Products-->
                             <div class="related-products">
                                 <h2>Benzer Ürünler</h2>
                                 <div class="row clearfix">
@@ -243,17 +231,12 @@
                     </div>
                 </div>
 
-                <!--Sidebar Side-->
                 <div class="sidebar-side col-lg-3 col-md-4 col-sm-12 col-xs-12">
                     @include('parts.products_sidebar')
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
 
 @endsection
 

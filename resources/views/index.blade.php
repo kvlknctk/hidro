@@ -108,7 +108,7 @@
     <section class="what-we-do">
         <div class="auto-container">
             <div class="row clearfix">
-                <!-- Content -->
+
                 <div class="content-column col-md-6 col-sm-12 col-xs-12">
                     <div class="inner-column">
                         <div class="sec-title light">
@@ -128,7 +128,6 @@
                     </div>
                 </div>
 
-                <!-- Video Column -->
                 <div class="video-column col-md-6 col-sm-12 col-xs-12">
                     <div class="inner-column">
                         <figure class="image"><img src="images/resource/video-img.jpg" alt="">
@@ -144,7 +143,6 @@
     <section class="about-us">
         <div class="auto-container">
             <div class="row clearfix">
-                <!-- Info Column -->
                 <div class="info-column col-md-6 col-sm-12 col-xs-12">
                     <div class="sec-title">
                         <h4>{{setting('site.company_name')}}</h4>
@@ -184,7 +182,6 @@
                     </div>
                 </div>
 
-                <!-- List Column -->
                 <div class="list-column col-md-6 col-sm-12 col-xs-12">
                     <div class="inner-column">
                         <div class="about-block">

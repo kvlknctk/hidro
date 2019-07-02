@@ -16,7 +16,6 @@
     <section class="news-section">
         <div class="auto-container">
             <div class="row clearfix">
-                <!-- News Block -->
 
                 @foreach($blogs as $blog)
 

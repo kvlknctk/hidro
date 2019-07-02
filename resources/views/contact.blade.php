@@ -101,7 +101,6 @@
 
     <section class="contact-map-section">
         <div class="map-outer">
-            <!--Map Canvas-->
             <div class="map-canvas"
                  data-zoom="12"
                  data-lat="-37.817085"

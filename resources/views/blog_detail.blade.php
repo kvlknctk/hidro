@@ -21,14 +21,11 @@
         <div class="auto-container">
             <div class="row clearfix">
 
-                <!--Content Side / Our Blog-->
                 <div class="content-side col-md-8 col-sm-12 col-xs-12">
-                    <!--Our Classic-->
                     <div class="blog-single padding-right">
                         <div class="inner-box">
                             <div class="top-box clearfix">
 
-                                <!-- /.image-box -->
                                 <div class="text-box">
                                     <ul class="info-list">
                                         <li>
@@ -37,8 +34,8 @@
 
                                     </ul>
                                     <h2>{{$blog->title}}</h2>
-                                </div><!-- /.text-box -->
-                            </div><!-- /.top-box -->
+                                </div>
+                            </div>
                             <div class="image"><img src="images/resource/blog-1.jpg" alt="" />
                             </div>
                             <div class="lower-content clearfix">
@@ -51,11 +48,9 @@
                     </div>
                 </div>
 
-                <!--Sidebar Side-->
                 <div class="sidebar-side col-md-4 col-sm-12 col-xs-12">
                     <aside class="sidebar default-sidebar">
 
-                        <!-- Search -->
                         <div class="sidebar-widget search-box">
                             <form method="post" action="contact.html">
                                 <div class="form-group">
@@ -64,7 +59,6 @@
                                 </div>
                             </form>
                         </div>
-
 
                         <div class="sidebar-widget popular-posts">
                             <div class="sidebar-title"><h2>Son Blog Yazıları</h2></div>
@@ -79,18 +73,12 @@
 
                             @endforeach
 
-
                         </div>
-
-
 
                     </aside>
                 </div>
             </div>
         </div>
     </div>
-
-
-
 
 @endsection

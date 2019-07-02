@@ -21,7 +21,6 @@
         <div class="auto-container">
 
             <div class="row clearfix">
-                <!-- Project Block -->
                 @foreach($works as $work)
                     <div class="project-block-four col-md-4 col-sm-6 col-xs-12">
                         <div class="image-box">
@@ -48,7 +47,6 @@
 
             </div>
 
-            <!-- Styled Pagination -->
            {{-- TODO: Buraya custom pagination yapılacak.
             <div class="styled-pagination text-center">
                 <ul class="clearfix">
