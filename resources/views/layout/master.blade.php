@@ -324,12 +324,12 @@
 <script src="{{asset('js/jquery.fancybox.js')}}"></script>
 <script src="{{asset('js/slick.min.js')}}"></script>
 <script src="{{asset('js/mixitup.js')}}"></script>
+@stack('scripts_orta')
 <script src="{{asset('js/owl.js')}}"></script>
 <script src="{{asset('js/appear.js')}}"></script>
 <script src="{{asset('js/validate.js')}}"></script>
 <script src="{{asset('js/wow.js')}}"></script>
 <script src="{{asset('js/script.js')}}"></script>
-
 @stack('scripts')
 
 </body>
