@@ -151,7 +151,7 @@
             return view('products', compact('products'));
         }
 
-        public function products_detail($category, $slug)
+        public function product_detail($category, $slug)
         {
 
             $product = Product::whereSlug($slug)->firstOrFail();
