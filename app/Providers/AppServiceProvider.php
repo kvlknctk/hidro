@@ -2,9 +2,11 @@
 
 namespace App\Providers;
 
+use App\Category;
 use App\Corporate;
 use App\File;
 use App\Link;
+use App\Product;
 use App\Reference;
 use App\Testimonial;
 use Illuminate\Support\ServiceProvider;
@@ -42,6 +44,10 @@ class AppServiceProvider extends ServiceProvider
 
         view()->composer('index', function($view){
             $view->with('references', Reference::get());
+        });
+        view()->composer(['products', 'products/*'], function($view){
+            $view->with('categories', Category::get());
+            $view->with('popular', Product::popularLast(100)->limit(6)->get());
         });
     }
 }

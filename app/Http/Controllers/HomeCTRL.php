@@ -4,8 +4,10 @@
 
     use App\Announcement;
     use App\Blog;
+    use App\Category;
     use App\Corporate;
     use App\Mail\Iletisim;
+    use App\Product;
     use App\Service;
     use App\Slider;
     use App\Work;
@@ -122,10 +124,43 @@
 
         }
 
-        public function products($slug = null)
+        public function products()
         {
             SEO::setTitle(trans('seo.titles.products'));
             SEO::setDescription(trans('seo.descriptions.products'));
+
+            $products = Product::with('category')->get();
+
+            return view('products', compact('products'));
+
+        }
+
+        public function products_category($category)
+        {
+
+            // kategoriyi buluyoruz
+            $category = Category::with('products')->find($category);
+
+            // kategoriye ait ürünleri products değişkenine aktarıp görüntüye veriyoruz.
+            $products = $category->products;
+
+
+            SEO::setTitle($category->title);
+            SEO::setDescription($category->title. ' - kategorisine ait ürünler listelenmiştir. ');
+
+            return view('products', compact('products'));
+        }
+
+        public function products_detail($category, $slug)
+        {
+
+            $product = Product::whereSlug($slug)->firstOrFail();
+            $product->visit();
+
+            SEO::setTitle($product->title);
+            SEO::setDescription($product->description);
+
+            return view('product_detail', compact('product'));
 
         }
 
