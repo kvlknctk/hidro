@@ -1,3 +1,13 @@
 .search_result {
     border-bottom: 1px solid #777777;
 }
+
+.c-square {
+    border: 1px solid black!important;
+    padding: 10px;
+    margin:5px;
+}
+
+.control-label {
+    color:black!important;
+}

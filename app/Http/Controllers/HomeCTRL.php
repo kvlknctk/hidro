@@ -7,6 +7,7 @@
     use App\Category;
     use App\Corporate;
     use App\Hresource;
+    use App\Mail\Servis;
     use App\Mail\Iletisim;
     use App\Product;
     use App\Service;
@@ -238,5 +239,18 @@
             return view('success')
                 ->with('title', 'Form Gönderildi')
                 ->with('message', 'İletişim bilgileriniz başarıyla gönderildi.');
+        }
+
+
+        public function servis_destek()
+        {
+            return view('servis_destek');
+        }
+
+        public function servis_destek_post(Request $request)
+        {
+
+            return Mail::to(setting('iletisim.mail'))->send(new Servis($request));
+
         }
     }

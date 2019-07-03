@@ -36,6 +36,10 @@ Route::post('/arama', ['as' => 'search_post', 'uses' => 'HomeCTRL@search_post'])
 Route::get('/insan_kaynaklari', ['as' => 'human_resources', 'uses' => 'HomeCTRL@human_resources']);
 Route::post('/insan_kaynaklari', ['as' => 'human_resources_post', 'uses' => 'HomeCTRL@human_resources_post']);
 
+Route::get('/servis_destek', ['as' => 'servis_destek', 'uses' => 'HomeCTRL@servis_destek']);
+Route::post('/servis_destek', ['as' => 'servis_destek_post', 'uses' => 'HomeCTRL@servis_destek_post']);
+
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
