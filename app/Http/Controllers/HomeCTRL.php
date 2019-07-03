@@ -88,7 +88,7 @@
             SEO::setTitle(trans('seo.titles.blogs'));
             SEO::setDescription(trans('seo.descriptions.blogs'));
 
-            $blogs = Blog::get();
+            $blogs = Blog::paginate(6);
 
             return view('blogs', compact('blogs'));
         }
@@ -106,7 +106,7 @@
 
         public function works()
         {
-            $works = Work::paginate(10);
+            $works = Work::paginate(9);
             SEO::setTitle(trans('seo.titles.works'));
             SEO::setDescription(trans('seo.descriptions.works'));
 
@@ -129,7 +129,7 @@
             SEO::setTitle(trans('seo.titles.products'));
             SEO::setDescription(trans('seo.descriptions.products'));
 
-            $products = Product::with('category')->paginate(3);
+            $products = Product::with('category')->paginate(9);
 
             return view('products', compact('products'));
 

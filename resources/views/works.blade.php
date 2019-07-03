@@ -47,15 +47,8 @@
 
             </div>
 
-           {{-- TODO: Buraya custom pagination yapılacak.
-            <div class="styled-pagination text-center">
-                <ul class="clearfix">
-                    <li><a class="prev" href="#"><span class="fa fa-angle-left"></span></a></li>
-                    <li><a href="#" class="active">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a class="next" href="#"><span class="fa fa-angle-right"></span></a></li>
-                </ul>
-            </div>--}}
+
+            {{$works->links('parts.paginate')}}
 
 
         </div>
