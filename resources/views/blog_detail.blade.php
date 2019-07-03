@@ -36,7 +36,7 @@
                                     <h2>{{$blog->title}}</h2>
                                 </div>
                             </div>
-                            <div class="image"><img src="images/resource/blog-1.jpg" alt="" />
+                            <div class="image"><img src="{{Voyager::image($blog->image)}}" alt="" />
                             </div>
                             <div class="lower-content clearfix">
                                 {!! $blog->description !!}
