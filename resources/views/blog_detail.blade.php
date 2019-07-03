@@ -52,9 +52,10 @@
                     <aside class="sidebar default-sidebar">
 
                         <div class="sidebar-widget search-box">
-                            <form method="post" action="contact.html">
+                            <form method="post" action="{{route('search_post')}}">
+                                @csrf
                                 <div class="form-group">
-                                    <input type="search" name="search-field" value="" placeholder="Arama Yap" required>
+                                    <input type="search" name="keyword" value="" placeholder="Arama Yap" required>
                                     <button type="submit"><span class="icon fa fa-search"></span></button>
                                 </div>
                             </form>
