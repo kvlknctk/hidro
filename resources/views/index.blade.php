@@ -112,26 +112,33 @@
                 <div class="content-column col-md-6 col-sm-12 col-xs-12">
                     <div class="inner-column">
                         <div class="sec-title light">
-                            <h4>Fun facts</h4>
-                            <h2>What We Achived?</h2>
-                            <h5>Strength and growth comes only through continuous effort & struggle.</h5>
+                            <h4>{{setting('site.company_name')}}</h4>
+                            <h2></h2>
+                            <h5>Bugüne kadar büyük bir titizlikle yaptığımız çalışmalar sayesinde...</h5>
                         </div>
 
                         <div class="info-box clearfix">
                             <span class="icon machinery-icon-worldwide"></span>
-                            <span class="count">148 <span class="plus">+</span></span>
-                            <span class="title"><span>Branches Worldwide</span></span>
+                            <span class="count">{{setting('tanitim-modulu.calisma')}} <span class="plus">+</span></span>
+                            <span class="title"><span>Firmaya Ulaştık</span></span>
                         </div>
 
-                        <div class="text">Over 148+ branches  indignation & dislike men who beguiled demoralized <br> by the charms of pleasure of the moment, so blinded by desire, that they <br> cannot foresee the pain and over all trouble.</div>
-                        <a href="#" class="more-btn"><i class="machinery-icon-next"></i> Locate Our Branches</a>
+                        <div class="text">
+                            Çalışmalarımızda kullandığımız kaliteli ve son teknoloji ürünlerimiz hakkında bilgi alabilir, bu ürünler hakkında soru sorabilirsiniz.
+                        </div>
+                        <a href="{{route('products')}}" class="more-btn"><i class="machinery-icon-next"></i> Ürünlerimiz</a>
                     </div>
                 </div>
 
                 <div class="video-column col-md-6 col-sm-12 col-xs-12">
                     <div class="inner-column">
-                        <figure class="image"><img src="images/resource/video-img.jpg" alt="">
-                            <a href="https://www.youtube.com/watch?v=Fvae8nxzVz4" class="link" data-fancybox="gallery" data-caption=""><span class="icon fa fa-play-circle"></span></a>
+                        @php
+                            $video_id = explode("?v=", setting('tanitim-modulu.video'));
+                            $video_id = $video_id[1];
+                            $thumbnail="http://img.youtube.com/vi/".$video_id."/maxresdefault.jpg";
+                        @endphp
+                        <figure class="image"><img src="{{$thumbnail}}" alt="">
+                            <a href="{{setting('tanitim-modulu.video')}}" class="link" data-fancybox="gallery" data-caption=""><span class="icon fa fa-play-circle"></span></a>
                         </figure>
                     </div>
                 </div>
