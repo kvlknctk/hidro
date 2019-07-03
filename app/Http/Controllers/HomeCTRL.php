@@ -129,7 +129,7 @@
             SEO::setTitle(trans('seo.titles.products'));
             SEO::setDescription(trans('seo.descriptions.products'));
 
-            $products = Product::with('category')->get();
+            $products = Product::with('category')->paginate(3);
 
             return view('products', compact('products'));
 

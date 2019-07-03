@@ -69,12 +69,10 @@
                         </div>
 
 
-                        <ul class="styled-pagination text-center">
-                            <li class="prev"><a href="#"><span class="fa fa-chevron-left"></span></a></li>
-                            <li><a href="#" class="active">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li class="next"><a href="#"><span class="fa fa-chevron-right"></span></a></li>
-                        </ul>
+                        {{$products->links('parts.paginate')}}
+
+
+
 
 
                     </div>
