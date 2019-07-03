@@ -6,6 +6,7 @@
     use App\Blog;
     use App\Category;
     use App\Corporate;
+    use App\Hresource;
     use App\Mail\Iletisim;
     use App\Product;
     use App\Service;
@@ -176,6 +177,18 @@
             SEO::setTitle(trans('seo.titles.human_resources'));
             SEO::setDescription(trans('seo.descriptions.human_resources'));
 
+            return view('human_resource');
+        }
+
+        public function human_resources_post(Request $request)
+        {
+            SEO::setTitle(trans('seo.titles.human_resources'));
+            SEO::setDescription(trans('seo.descriptions.human_resources'));
+
+
+            Hresource::create($request->all());
+
+            return back()->with('message', 'Formunuz başarılı bir şekilde bize gönderildi.')->with('title', 'Gönderildi');
         }
 
 
@@ -224,6 +237,6 @@
 
             return view('success')
                 ->with('title', 'Form Gönderildi')
-                ->with('message', 'İletişim bilgileriniz başarıyla gönderildi. ');
+                ->with('message', 'İletişim bilgileriniz başarıyla gönderildi.');
         }
     }

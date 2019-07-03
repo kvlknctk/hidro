@@ -64,7 +64,7 @@
                             <a class="btn btn-default dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#"><span class="icon flaticon-globe"></span> Hızlı Erişim <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu style-one" aria-labelledby="dropdownMenu1">
                                 <li><a href="#">Servis Destek Talebi</a></li>
-                                <li><a href="#">İnsan Kaynakları </a></li>
+                                <li><a href="{{route('human_resources')}}">İnsan Kaynakları </a></li>
                                 <li><a href="{{route('contact')}}">İletişim</a></li>
                             </ul>
                         </div>

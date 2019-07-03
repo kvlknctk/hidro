@@ -33,6 +33,9 @@ Route::post('/iletisim', ['as' => 'contact_post', 'uses' => 'HomeCTRL@contact_po
 
 Route::post('/arama', ['as' => 'search_post', 'uses' => 'HomeCTRL@search_post']);
 
+Route::get('/insan_kaynaklari', ['as' => 'human_resources', 'uses' => 'HomeCTRL@human_resources']);
+Route::post('/insan_kaynaklari', ['as' => 'human_resources_post', 'uses' => 'HomeCTRL@human_resources_post']);
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
