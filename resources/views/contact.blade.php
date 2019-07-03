@@ -46,7 +46,7 @@
                                 <li>
                                     <span class="icon flaticon-watch"></span>
                                     <h5>Çalışma Saatleri</h5>
-                                    <p>Pzt-Cmt: 09.00 - 18.</p>
+                                    <p>Pzt-Cmt: {{setting('sabit-yazilar.calisma_saat_baslama')}} - {{setting('sabit-yazilar.calisma_saat_bitis')}}</p>
                                 </li>
                             </ul>
                         </div>

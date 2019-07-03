@@ -33,7 +33,7 @@
                 <div class="inner-container clearfix">
                     <div class="top-left">
                         <ul class="clearfix">
-                            <li><i class="icon flaticon-clock-circular-outline"></i> Pzt - Cmt: 09:00 - 18:00 </li>
+                            <li><i class="icon flaticon-clock-circular-outline"></i> Pzt - Cmt: {{setting('sabit-yazilar.calisma_saat_baslama')}} - {{setting('sabit-yazilar.calisma_saat_bitis')}} </li>
                             <li class="social-links"><span>Sosyal Ağlar :</span>
 
                                 @if(setting('sosyal-medya.instagram'))
