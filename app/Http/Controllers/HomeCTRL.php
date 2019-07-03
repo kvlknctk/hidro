@@ -27,8 +27,8 @@
             $announcements = Announcement::limit(4)->get();
             $services      = Service::limit(10)->get();
             $corporate     = Corporate::get();
-            $works          = Work::limit(10)->get();
-            $blogs          = Blog::limit(3)->get();
+            $works         = Work::limit(10)->get();
+            $blogs         = Blog::limit(3)->get();
 
             return view('index', compact(
                 'sliders', 'announcements', 'services', 'corporate', 'works', 'blogs'
@@ -65,7 +65,7 @@
             SEO::setDescription(trans('seo.descriptions.corporate'));
 
             $corporates = Corporate::all();
-            $corporate = Corporate::whereSlug('hakkimizda')->firstOrFail();
+            $corporate  = Corporate::whereSlug('hakkimizda')->firstOrFail();
 
             return view('corporate', compact('corporate'));
 
@@ -95,7 +95,7 @@
 
         public function blog_detail($slug)
         {
-            $blog = Blog::whereSlug($slug)->firstOrFail();
+            $blog  = Blog::whereSlug($slug)->firstOrFail();
             $blogs = Blog::limit(5)->get();
 
             SEO::setTitle($blog->title);
@@ -146,7 +146,7 @@
 
 
             SEO::setTitle($category->title);
-            SEO::setDescription($category->title. ' - kategorisine ait ürünler listelenmiştir. ');
+            SEO::setDescription($category->title . ' - kategorisine ait ürünler listelenmiştir. ');
 
             return view('products', compact('products'));
         }
@@ -171,7 +171,6 @@
         }
 
 
-
         public function human_resources()
         {
             SEO::setTitle(trans('seo.titles.human_resources'));
@@ -182,7 +181,32 @@
 
         public function search_post(Request $request)
         {
-            return $request->all();
+            //return $request->all();
+            $request->validate([
+                'keyword' => 'required'
+            ]);
+            $keyword = $request->get('keyword');
+
+
+            $services = Service::where('title', 'LIKE', '%' . $keyword . '%')
+                ->orWhere('description', 'LIKE', '%' . $keyword . '%')
+                ->get();
+
+            $products = Product::with('category')->where('title', 'LIKE', '%' . $keyword . '%')
+                ->orWhere('description', 'LIKE', '%' . $keyword . '%')
+                ->get();
+
+            $works = Work::where('title', 'LIKE', '%' . $keyword . '%')
+                ->orWhere('description', 'LIKE', '%' . $keyword . '%')
+                ->get();
+
+            $blogs = Blog::where('title', 'LIKE', '%' . $keyword . '%')
+                ->orWhere('description', 'LIKE', '%' . $keyword . '%')
+                ->get();
+
+
+            return view('search_result', compact('services', 'products', 'works', 'blogs'));
+
         }
 
 

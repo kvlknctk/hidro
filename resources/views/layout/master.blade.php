@@ -8,6 +8,7 @@
     <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
     <link href="{{asset('css/style.css')}}" rel="stylesheet">
     <link href="{{asset('css/responsive.css')}}" rel="stylesheet">
+    <link href="{{asset('css/custom.css')}}" rel="stylesheet">
 
     <!--Ikonlar-->
     <link rel="shortcut icon" href="{{asset('images/favicon.png')}}" type="image/x-icon">
